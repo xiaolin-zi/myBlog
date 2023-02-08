@@ -1,16 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Hexo</title>
-  <icon>http://example.com/icon.png</icon>
+  <title>林のBlog</title>
+  <icon>http://lookforward.top/icon.png</icon>
   
-  <link href="http://example.com/atom.xml" rel="self"/>
+  <link href="http://lookforward.top/atom.xml" rel="self"/>
   
-  <link href="http://example.com/"/>
+  <link href="http://lookforward.top/"/>
   <updated>2022-11-02T14:14:28.680Z</updated>
-  <id>http://example.com/</id>
+  <id>http://lookforward.top/</id>
   
   <author>
-    <name>John Doe</name>
+    <name>小林</name>
     
   </author>
   
@@ -18,8 +18,8 @@
   
   <entry>
     <title>Git学习笔记</title>
-    <link href="http://example.com/2023/02/08/Git/"/>
-    <id>http://example.com/2023/02/08/Git/</id>
+    <link href="http://lookforward.top/2023/02/08/Git/"/>
+    <id>http://lookforward.top/2023/02/08/Git/</id>
     <published>2023-02-08T11:31:31.697Z</published>
     <updated>2022-11-02T14:14:28.680Z</updated>
     
@@ -34,15 +34,15 @@
     
     
     
-    <category term="Git学习笔记" scheme="http://example.com/categories/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="Git学习笔记" scheme="http://lookforward.top/categories/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Hello World</title>
-    <link href="http://example.com/2023/02/08/hello-world/"/>
-    <id>http://example.com/2023/02/08/hello-world/</id>
+    <link href="http://lookforward.top/2023/02/08/hello-world/"/>
+    <id>http://lookforward.top/2023/02/08/hello-world/</id>
     <published>2023-02-08T09:52:33.174Z</published>
     <updated>2023-02-08T09:52:33.174Z</updated>
     
@@ -62,8 +62,8 @@
   
   <entry>
     <title>JavaScript高级篇</title>
-    <link href="http://example.com/2022/11/02/javaScript%E9%AB%98%E7%BA%A7/"/>
-    <id>http://example.com/2022/11/02/javaScript%E9%AB%98%E7%BA%A7/</id>
+    <link href="http://lookforward.top/2022/11/02/javaScript%E9%AB%98%E7%BA%A7/"/>
+    <id>http://lookforward.top/2022/11/02/javaScript%E9%AB%98%E7%BA%A7/</id>
     <published>2022-11-02T15:19:46.000Z</published>
     <updated>2022-11-02T14:59:04.285Z</updated>
     
@@ -82,15 +82,15 @@
     
     
     
-    <category term="前端学习笔记" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="前端学习笔记" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>JavaScript</title>
-    <link href="http://example.com/2022/11/02/%E5%B0%9A%E7%A1%85%E8%B0%B7JavaScript/"/>
-    <id>http://example.com/2022/11/02/%E5%B0%9A%E7%A1%85%E8%B0%B7JavaScript/</id>
+    <link href="http://lookforward.top/2022/11/02/%E5%B0%9A%E7%A1%85%E8%B0%B7JavaScript/"/>
+    <id>http://lookforward.top/2022/11/02/%E5%B0%9A%E7%A1%85%E8%B0%B7JavaScript/</id>
     <published>2022-11-02T14:39:46.000Z</published>
     <updated>2022-11-02T14:58:55.921Z</updated>
     
@@ -107,15 +107,15 @@
     
     
     
-    <category term="前端学习笔记" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="前端学习笔记" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>ES6</title>
-    <link href="http://example.com/2022/11/02/ECMAScript6%EF%BC%88%E5%8C%85%E5%90%ABes6-es11%EF%BC%89/"/>
-    <id>http://example.com/2022/11/02/ECMAScript6%EF%BC%88%E5%8C%85%E5%90%ABes6-es11%EF%BC%89/</id>
+    <link href="http://lookforward.top/2022/11/02/ECMAScript6%EF%BC%88%E5%8C%85%E5%90%ABes6-es11%EF%BC%89/"/>
+    <id>http://lookforward.top/2022/11/02/ECMAScript6%EF%BC%88%E5%8C%85%E5%90%ABes6-es11%EF%BC%89/</id>
     <published>2022-11-02T14:19:46.000Z</published>
     <updated>2022-11-02T14:57:18.250Z</updated>
     
@@ -134,15 +134,15 @@
     
     
     
-    <category term="前端学习笔记" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="前端学习笔记" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>SpringSecurity</title>
-    <link href="http://example.com/2022/10/22/Spring%20Security/"/>
-    <id>http://example.com/2022/10/22/Spring%20Security/</id>
+    <link href="http://lookforward.top/2022/10/22/Spring%20Security/"/>
+    <id>http://lookforward.top/2022/10/22/Spring%20Security/</id>
     <published>2022-10-22T09:30:46.000Z</published>
     <updated>2022-10-22T16:11:54.075Z</updated>
     
@@ -160,15 +160,15 @@
     
     
     
-    <category term="Spring全家桶" scheme="http://example.com/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    <category term="Spring全家桶" scheme="http://lookforward.top/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>Spring</title>
-    <link href="http://example.com/2022/10/22/Spring5/"/>
-    <id>http://example.com/2022/10/22/Spring5/</id>
+    <link href="http://lookforward.top/2022/10/22/Spring5/"/>
+    <id>http://lookforward.top/2022/10/22/Spring5/</id>
     <published>2022-10-22T09:30:46.000Z</published>
     <updated>2022-10-22T16:11:37.176Z</updated>
     
@@ -186,15 +186,15 @@
     
     
     
-    <category term="Spring全家桶" scheme="http://example.com/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    <category term="Spring全家桶" scheme="http://lookforward.top/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>MyBatis</title>
-    <link href="http://example.com/2022/10/22/MyBatis%E7%AC%94%E8%AE%B0/"/>
-    <id>http://example.com/2022/10/22/MyBatis%E7%AC%94%E8%AE%B0/</id>
+    <link href="http://lookforward.top/2022/10/22/MyBatis%E7%AC%94%E8%AE%B0/"/>
+    <id>http://lookforward.top/2022/10/22/MyBatis%E7%AC%94%E8%AE%B0/</id>
     <published>2022-10-22T09:19:46.000Z</published>
     <updated>2022-11-02T14:54:03.761Z</updated>
     
@@ -212,15 +212,15 @@
     
     
     
-    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="http://lookforward.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
   </entry>
   
   <entry>
     <title>SpringMVC</title>
-    <link href="http://example.com/2022/10/22/SpringMVC%E7%AC%94%E8%AE%B0/"/>
-    <id>http://example.com/2022/10/22/SpringMVC%E7%AC%94%E8%AE%B0/</id>
+    <link href="http://lookforward.top/2022/10/22/SpringMVC%E7%AC%94%E8%AE%B0/"/>
+    <id>http://lookforward.top/2022/10/22/SpringMVC%E7%AC%94%E8%AE%B0/</id>
     <published>2022-10-22T09:19:46.000Z</published>
     <updated>2022-10-22T16:11:13.224Z</updated>
     
@@ -238,15 +238,15 @@
     
     
     
-    <category term="Spring全家桶" scheme="http://example.com/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    <category term="Spring全家桶" scheme="http://lookforward.top/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
     
     
   </entry>
   
   <entry>
     <title>MyBatis-Plus</title>
-    <link href="http://example.com/2022/10/22/MyBatis-Plus/"/>
-    <id>http://example.com/2022/10/22/MyBatis-Plus/</id>
+    <link href="http://lookforward.top/2022/10/22/MyBatis-Plus/"/>
+    <id>http://lookforward.top/2022/10/22/MyBatis-Plus/</id>
     <published>2022-10-22T08:22:46.000Z</published>
     <updated>2022-10-22T16:12:26.981Z</updated>
     
@@ -264,15 +264,15 @@
     
     
     
-    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="http://lookforward.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
   </entry>
   
   <entry>
     <title>Linux</title>
-    <link href="http://example.com/2022/10/22/Linux/"/>
-    <id>http://example.com/2022/10/22/Linux/</id>
+    <link href="http://lookforward.top/2022/10/22/Linux/"/>
+    <id>http://lookforward.top/2022/10/22/Linux/</id>
     <published>2022-10-22T08:20:46.000Z</published>
     <updated>2022-11-02T14:53:59.347Z</updated>
     
@@ -291,15 +291,15 @@
     
     
     
-    <category term="操作系统" scheme="http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="操作系统" scheme="http://lookforward.top/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
     
     
   </entry>
   
   <entry>
     <title>JDBCTemplate</title>
-    <link href="http://example.com/2022/10/22/jdbcTemplate%EF%BC%88%E6%A6%82%E5%BF%B5%E5%92%8C%E5%87%86%E5%A4%87%EF%BC%89/"/>
-    <id>http://example.com/2022/10/22/jdbcTemplate%EF%BC%88%E6%A6%82%E5%BF%B5%E5%92%8C%E5%87%86%E5%A4%87%EF%BC%89/</id>
+    <link href="http://lookforward.top/2022/10/22/jdbcTemplate%EF%BC%88%E6%A6%82%E5%BF%B5%E5%92%8C%E5%87%86%E5%A4%87%EF%BC%89/"/>
+    <id>http://lookforward.top/2022/10/22/jdbcTemplate%EF%BC%88%E6%A6%82%E5%BF%B5%E5%92%8C%E5%87%86%E5%A4%87%EF%BC%89/</id>
     <published>2022-10-22T08:19:46.000Z</published>
     <updated>2022-10-22T16:12:43.731Z</updated>
     
@@ -317,15 +317,15 @@
     
     
     
-    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="http://lookforward.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
   </entry>
   
   <entry>
     <title>书城项目</title>
-    <link href="http://example.com/2022/10/22/%E4%B9%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/"/>
-    <id>http://example.com/2022/10/22/%E4%B9%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/</id>
+    <link href="http://lookforward.top/2022/10/22/%E4%B9%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://lookforward.top/2022/10/22/%E4%B9%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/</id>
     <published>2022-10-22T08:04:46.000Z</published>
     <updated>2022-11-02T14:53:44.030Z</updated>
     
@@ -343,15 +343,15 @@
     
     
     
-    <category term="JavaWeb" scheme="http://example.com/categories/JavaWeb/"/>
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
     
     
   </entry>
   
   <entry>
     <title>JDBC</title>
-    <link href="http://example.com/2022/10/14/JDBC/"/>
-    <id>http://example.com/2022/10/14/JDBC/</id>
+    <link href="http://lookforward.top/2022/10/14/JDBC/"/>
+    <id>http://lookforward.top/2022/10/14/JDBC/</id>
     <published>2022-10-14T14:19:58.000Z</published>
     <updated>2022-10-22T08:29:38.535Z</updated>
     
@@ -369,15 +369,15 @@
     
     
     
-    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="数据库" scheme="http://lookforward.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
     
     
   </entry>
   
   <entry>
     <title>Html和CSS</title>
-    <link href="http://example.com/2022/10/14/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%B8%89%E4%BB%B6%E5%A5%97/"/>
-    <id>http://example.com/2022/10/14/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%B8%89%E4%BB%B6%E5%A5%97/</id>
+    <link href="http://lookforward.top/2022/10/14/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%B8%89%E4%BB%B6%E5%A5%97/"/>
+    <id>http://lookforward.top/2022/10/14/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%B8%89%E4%BB%B6%E5%A5%97/</id>
     <published>2022-10-14T14:19:46.000Z</published>
     <updated>2022-10-22T09:15:41.043Z</updated>
     
@@ -389,15 +389,15 @@
     
     
     
-    <category term="前端学习笔记" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="前端学习笔记" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Markdown语法</title>
-    <link href="http://example.com/2022/10/14/Markdown%E8%AF%AD%E6%B3%95/"/>
-    <id>http://example.com/2022/10/14/Markdown%E8%AF%AD%E6%B3%95/</id>
+    <link href="http://lookforward.top/2022/10/14/Markdown%E8%AF%AD%E6%B3%95/"/>
+    <id>http://lookforward.top/2022/10/14/Markdown%E8%AF%AD%E6%B3%95/</id>
     <published>2022-10-14T14:18:34.000Z</published>
     <updated>2022-10-21T05:10:33.993Z</updated>
     
@@ -413,15 +413,15 @@
     
     
     
-    <category term="Markdown语法笔记" scheme="http://example.com/categories/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    <category term="Markdown语法笔记" scheme="http://lookforward.top/categories/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
     
     
   </entry>
   
   <entry>
     <title>Maven</title>
-    <link href="http://example.com/2022/10/14/Maven/"/>
-    <id>http://example.com/2022/10/14/Maven/</id>
+    <link href="http://lookforward.top/2022/10/14/Maven/"/>
+    <id>http://lookforward.top/2022/10/14/Maven/</id>
     <published>2022-10-14T14:09:32.000Z</published>
     <updated>2022-10-22T08:29:20.578Z</updated>
     
@@ -442,7 +442,7 @@
     
     
     
-    <category term="Maven" scheme="http://example.com/categories/Maven/"/>
+    <category term="Maven" scheme="http://lookforward.top/categories/Maven/"/>
     
     
   </entry>
