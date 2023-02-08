@@ -6,7 +6,7 @@
   <link href="http://example.com/atom.xml" rel="self"/>
   
   <link href="http://example.com/"/>
-  <updated>2023-02-08T09:52:33.174Z</updated>
+  <updated>2022-11-02T14:14:28.680Z</updated>
   <id>http://example.com/</id>
   
   <author>
@@ -15,6 +15,29 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Git学习笔记</title>
+    <link href="http://example.com/2023/02/08/Git/"/>
+    <id>http://example.com/2023/02/08/Git/</id>
+    <published>2023-02-08T11:31:31.697Z</published>
+    <updated>2022-11-02T14:14:28.680Z</updated>
+    
+    
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;Git&lt;/h1&gt;&lt;h2 id=&quot;一、需要掌握的知识点&quot;&gt;&lt;a href=&quot;#一、需要掌握的知识点&quot; class=&quot;headerlink&quot; title=&quot;一、需要掌握的知识点&quot;&gt;&lt;/a&gt;一、需要掌握的知识点&lt;/h2&gt;&lt;h3 id=&quot;1-1、Git&quot;&gt;&lt;a href=&quot;#1-1、Git&quot; class=&quot;headerlink&quot; title=&quot;1.1、Git&quot;&gt;&lt;/a&gt;1.1、Git&lt;/h3&gt;&lt;p&gt;1、Git介绍，分布式版本控制工具  VS  集中式版本控制工具&lt;/p&gt;
+&lt;p&gt;2、Git安装，基于官网发布的最新版本2.31.1安装讲解&lt;/p&gt;
+&lt;p&gt;3、Git命令，基于开发案例，详细讲解git的常用命令&lt;/p&gt;
+&lt;p&gt;4、Git分支，分支特性，分支创建，分支转换，分支合并，代码合并冲突解决&lt;/p&gt;
+&lt;p&gt;5、Idea集成Git&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Git学习笔记" scheme="http://example.com/categories/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>Hello World</title>
@@ -33,6 +56,413 @@
       
     
     
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript高级篇</title>
+    <link href="http://example.com/2022/11/02/javaScript%E9%AB%98%E7%BA%A7/"/>
+    <id>http://example.com/2022/11/02/javaScript%E9%AB%98%E7%BA%A7/</id>
+    <published>2022-11-02T15:19:46.000Z</published>
+    <updated>2022-11-02T14:59:04.285Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# js高级
+
+&lt;p&gt;[Toc]&lt;/p&gt;
+&lt;h2 id=&quot;一、基础总结深入&quot;&gt;&lt;a href=&quot;#一、基础总结深入&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端学习笔记" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JavaScript</title>
+    <link href="http://example.com/2022/11/02/%E5%B0%9A%E7%A1%85%E8%B0%B7JavaScript/"/>
+    <id>http://example.com/2022/11/02/%E5%B0%9A%E7%A1%85%E8%B0%B7JavaScript/</id>
+    <published>2022-11-02T14:39:46.000Z</published>
+    <updated>2022-11-02T14:58:55.921Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;JavaScript&quot;&gt;&lt;a href=&quot;#JavaScript&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端学习笔记" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>ES6</title>
+    <link href="http://example.com/2022/11/02/ECMAScript6%EF%BC%88%E5%8C%85%E5%90%ABes6-es11%EF%BC%89/"/>
+    <id>http://example.com/2022/11/02/ECMAScript6%EF%BC%88%E5%8C%85%E5%90%ABes6-es11%EF%BC%89/</id>
+    <published>2022-11-02T14:19:46.000Z</published>
+    <updated>2022-11-02T14:57:18.250Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# ECMAScript6（包含es6-es11）
+
+&lt;p&gt;[Toc]&lt;/p&gt;
+&lt;h2 id=&quot;一、强大的babel&quot;&gt;&lt;a href=&quot;#一、强大的babel&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端学习笔记" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SpringSecurity</title>
+    <link href="http://example.com/2022/10/22/Spring%20Security/"/>
+    <id>http://example.com/2022/10/22/Spring%20Security/</id>
+    <published>2022-10-22T09:30:46.000Z</published>
+    <updated>2022-10-22T16:11:54.075Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# Spring Security
+
+&lt;h2 id=&quot;一、Spring-Security框架简介&quot;&gt;&lt;a href=&quot;#一、Spring-Security框架简介&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Spring全家桶" scheme="http://example.com/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Spring</title>
+    <link href="http://example.com/2022/10/22/Spring5/"/>
+    <id>http://example.com/2022/10/22/Spring5/</id>
+    <published>2022-10-22T09:30:46.000Z</published>
+    <updated>2022-10-22T16:11:37.176Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# Spring5框架
+
+&lt;h2 id=&quot;一、Spring框架概述&quot;&gt;&lt;a href=&quot;#一、Spring框架概述&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Spring全家桶" scheme="http://example.com/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MyBatis</title>
+    <link href="http://example.com/2022/10/22/MyBatis%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2022/10/22/MyBatis%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-10-22T09:19:46.000Z</published>
+    <updated>2022-11-02T14:54:03.761Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# Mybatis简介
+## MyBatis历史
+-    MyBatis最初是Apache的一个开源项目iBatis, 2010年6月这个项目由Apache Software</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SpringMVC</title>
+    <link href="http://example.com/2022/10/22/SpringMVC%E7%AC%94%E8%AE%B0/"/>
+    <id>http://example.com/2022/10/22/SpringMVC%E7%AC%94%E8%AE%B0/</id>
+    <published>2022-10-22T09:19:46.000Z</published>
+    <updated>2022-10-22T16:11:13.224Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;一、SpringMVC简介&quot;&gt;&lt;a href=&quot;#一、SpringMVC简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="Spring全家桶" scheme="http://example.com/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MyBatis-Plus</title>
+    <link href="http://example.com/2022/10/22/MyBatis-Plus/"/>
+    <id>http://example.com/2022/10/22/MyBatis-Plus/</id>
+    <published>2022-10-22T08:22:46.000Z</published>
+    <updated>2022-10-22T16:12:26.981Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# 一、MyBatis-Plus
+
+&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Linux</title>
+    <link href="http://example.com/2022/10/22/Linux/"/>
+    <id>http://example.com/2022/10/22/Linux/</id>
+    <published>2022-10-22T08:20:46.000Z</published>
+    <updated>2022-11-02T14:53:59.347Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# Linux
+
+&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h1 id=&quot;一、基础&quot;&gt;&lt;a href=&quot;#一、基础&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="操作系统" scheme="http://example.com/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JDBCTemplate</title>
+    <link href="http://example.com/2022/10/22/jdbcTemplate%EF%BC%88%E6%A6%82%E5%BF%B5%E5%92%8C%E5%87%86%E5%A4%87%EF%BC%89/"/>
+    <id>http://example.com/2022/10/22/jdbcTemplate%EF%BC%88%E6%A6%82%E5%BF%B5%E5%92%8C%E5%87%86%E5%A4%87%EF%BC%89/</id>
+    <published>2022-10-22T08:19:46.000Z</published>
+    <updated>2022-10-22T16:12:43.731Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# jdbcTemplate（概念和准备）
+
+&lt;h2 id=&quot;1、什么是JdbcTemplate&quot;&gt;&lt;a href=&quot;#1、什么是JdbcTemplate&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>书城项目</title>
+    <link href="http://example.com/2022/10/22/%E4%B9%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/"/>
+    <id>http://example.com/2022/10/22/%E4%B9%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/</id>
+    <published>2022-10-22T08:04:46.000Z</published>
+    <updated>2022-11-02T14:53:44.030Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+# 书城项目
+
+&lt;h2 id=&quot;第一阶段：表单验证&quot;&gt;&lt;a href=&quot;#第一阶段：表单验证&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaWeb" scheme="http://example.com/categories/JavaWeb/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JDBC</title>
+    <link href="http://example.com/2022/10/14/JDBC/"/>
+    <id>http://example.com/2022/10/14/JDBC/</id>
+    <published>2022-10-14T14:19:58.000Z</published>
+    <updated>2022-10-22T08:29:38.535Z</updated>
+    
+    
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;JDBC核心技术&quot;&gt;&lt;a href=&quot;#JDBC核心技术&quot; class=&quot;headerlink&quot; title=&quot;JDBC核心技术&quot;&gt;&lt;/a&gt;JDBC核心技术&lt;/h1&gt;&lt;p&gt;讲师：宋红康&lt;/p&gt;
+&lt;p&gt;微博：尚硅谷-宋红康&lt;/p&gt;
+&lt;hr&gt;
+&lt;h2 id=&quot;第1章：JDBC概述&quot;&gt;&lt;a href=&quot;#第1章：JDBC概述&quot; class=&quot;headerlink&quot; title=&quot;第1章：JDBC概述&quot;&gt;&lt;/a&gt;第1章：JDBC概述&lt;/h2&gt;&lt;h3 id=&quot;1-1-数据的持久化&quot;&gt;&lt;a href=&quot;#1-1-数据的持久化&quot; class=&quot;headerlink&quot; title=&quot;1.1 数据的持久化&quot;&gt;&lt;/a&gt;1.1 数据的持久化&lt;/h3&gt;&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;持久化(persistence)：&lt;strong&gt;把数据保存到可掉电式存储设备中以供之后使用&lt;/strong&gt;。大多数情况下，特别是企业级应用，&lt;strong&gt;数据持久化意味着将内存中的数据保存到硬盘&lt;/strong&gt;上加以”固化”&lt;strong&gt;，而持久化的实现过程大多通过各种关系数据库来完成&lt;/strong&gt;。&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;持久化的主要应用是将内存中的数据存储在关系型数据库中，当然也可以存储在磁盘文件、XML数据文件中。&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;%E5%B0%9A%E7%A1%85%E8%B0%B7_%E5%AE%8B%E7%BA%A2%E5%BA%B7_JDBC.assets/1566741430592.png&quot; alt=&quot;1566741430592&quot;&gt; &lt;/p&gt;</summary>
+    
+    
+    
+    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Html和CSS</title>
+    <link href="http://example.com/2022/10/14/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%B8%89%E4%BB%B6%E5%A5%97/"/>
+    <id>http://example.com/2022/10/14/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%B8%89%E4%BB%B6%E5%A5%97/</id>
+    <published>2022-10-14T14:19:46.000Z</published>
+    <updated>2022-10-22T09:15:41.043Z</updated>
+    
+    
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;前端基础—-三件套&quot;&gt;&lt;a href=&quot;#前端基础—-三件套&quot; class=&quot;headerlink&quot; title=&quot;前端基础—-三件套&quot;&gt;&lt;/a&gt;前端基础—-三件套&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
+&lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;Zeal64位下载&lt;a href=&quot;https://wwr.lanzoui.com/iQhP5urk3gb&quot;&gt;https://wwr.lanzoui.com/iQhP5urk3gb&lt;/a&gt;&lt;br&gt;Html5&lt;a href=&quot;http://search.bilibili.com/all?from_source=webcommentline_search&amp;keyword=%E6%96%87%E6%A1%A3%E4%B8%8B%E8%BD%BD&quot;&gt;文档下载&lt;/a&gt;&lt;a href=&quot;https://wwr.lanzoui.com/iqAiiurklfi&quot;&gt;https://wwr.lanzoui.com/iqAiiurklfi&lt;/a&gt;&lt;br&gt;CSS3文档下载&lt;a href=&quot;https://wwr.lanzoui.com/iA86gurklgj&quot;&gt;https://wwr.lanzoui.com/iA86gurklgj&lt;/a&gt;&lt;br&gt;文档下载完解压，将html.docset和css.docset放到Zeal-x64/docset文件夹下&lt;br&gt;启动zeal.exe程序就可以直接使用了&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="前端学习笔记" scheme="http://example.com/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>MySQL</title>
+    <link href="http://example.com/2022/10/14/MySQL%20/"/>
+    <id>http://example.com/2022/10/14/MySQL%20/</id>
+    <published>2022-10-14T14:19:15.000Z</published>
+    <updated>2022-10-22T09:06:36.365Z</updated>
+    
+    
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;数据库&quot;&gt;&lt;a href=&quot;#数据库&quot; class=&quot;headerlink&quot; title=&quot;数据库&quot;&gt;&lt;/a&gt;数据库&lt;/h1&gt;&lt;p&gt;什么是数据库？什么是数据库管理系统？什么是MySQL？他们之间的关系是什么？&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;2&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;3&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;4&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;5&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;6&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;7&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;8&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;数据库：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	英文单词DataBase，简称DB。按照一定格式存储数据的一些文件的组合。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;	顾名思义：存储数据的仓库，实际上就是一堆文件。这些文件中存储了具有特定格式的数据。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;数据库管理系统：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		DataBaseManagement，简称DBMS。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		数据库管理系统是专门用来管理数据库中数据的，数据库管理系统可以对数据库当中的数据进行增删改查。&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;常见的数据库管理系统：&lt;/span&gt;&lt;br&gt;&lt;span class=&quot;line&quot;&gt;		MySQL、Oracle、MS SqlServer、DB2、sybase等....&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;</summary>
+    
+    
+    
+    <category term="数据库" scheme="http://example.com/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Markdown语法</title>
+    <link href="http://example.com/2022/10/14/Markdown%E8%AF%AD%E6%B3%95/"/>
+    <id>http://example.com/2022/10/14/Markdown%E8%AF%AD%E6%B3%95/</id>
+    <published>2022-10-14T14:18:34.000Z</published>
+    <updated>2022-10-21T05:10:33.993Z</updated>
+    
+    
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 align=&quot;center&quot;&gt;Markdown语法&lt;/h1&gt;
+
+&lt;h3 id=&quot;1-标题&quot;&gt;&lt;a href=&quot;#1-标题&quot; class=&quot;headerlink&quot; title=&quot;1.标题&quot;&gt;&lt;/a&gt;1.标题&lt;/h3&gt;&lt;p&gt;两种方法：&lt;/p&gt;
+&lt;p&gt;1）使用快捷键Ctrl+(1-6)&lt;/p&gt;
+&lt;p&gt;1）使用#+空格+文字(一个#代表一级，两个代表二级……)&lt;/p&gt;
+&lt;p&gt;例：&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Markdown语法笔记" scheme="http://example.com/categories/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Maven</title>
+    <link href="http://example.com/2022/10/14/Maven/"/>
+    <id>http://example.com/2022/10/14/Maven/</id>
+    <published>2022-10-14T14:09:32.000Z</published>
+    <updated>2022-10-22T08:29:20.578Z</updated>
+    
+    
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;Maven&quot;&gt;&lt;a href=&quot;#Maven&quot; class=&quot;headerlink&quot; title=&quot;Maven&quot;&gt;&lt;/a&gt;Maven&lt;/h1&gt;&lt;h2 id=&quot;一、小白入门&quot;&gt;&lt;a href=&quot;#一、小白入门&quot; class=&quot;headerlink&quot; title=&quot;一、小白入门&quot;&gt;&lt;/a&gt;一、小白入门&lt;/h2&gt;&lt;h3 id=&quot;第一章、Maven概述&quot;&gt;&lt;a href=&quot;#第一章、Maven概述&quot; class=&quot;headerlink&quot; title=&quot;第一章、Maven概述&quot;&gt;&lt;/a&gt;第一章、Maven概述&lt;/h3&gt;&lt;h4 id=&quot;1、为什么要学习Maven？&quot;&gt;&lt;a href=&quot;#1、为什么要学习Maven？&quot; class=&quot;headerlink&quot; title=&quot;1、为什么要学习Maven？&quot;&gt;&lt;/a&gt;1、为什么要学习Maven？&lt;/h4&gt;&lt;h5 id=&quot;1、Maven作为依赖管理工具&quot;&gt;&lt;a href=&quot;#1、Maven作为依赖管理工具&quot; class=&quot;headerlink&quot; title=&quot;1、Maven作为依赖管理工具&quot;&gt;&lt;/a&gt;1、Maven作为依赖管理工具&lt;/h5&gt;&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;jar包的规模&lt;/p&gt;
+&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;随着我们使用越来越多的框架，或者框架封装程度越来越高，项目中使用的jar包也越来越多，项目中，一个模块里面要用到上百个jar包是非常正常的。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;比如下面这个例子，我们只用到SpringBoot、SpringCloud框架中的三个功能：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nacos服务器注册发现&lt;/li&gt;
+&lt;li&gt;Web框架环境&lt;/li&gt;
+&lt;li&gt;图模块技术Thyme leaf&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;最终导入了106个jar包&lt;/p&gt;
+&lt;p&gt;而如果使用Maven来引用这些jar包只需要配置三个【依赖】。&lt;/p&gt;</summary>
+    
+    
+    
+    <category term="Maven" scheme="http://example.com/categories/Maven/"/>
     
     
   </entry>
