@@ -113,7 +113,31 @@
 
 
       <div class="flex-container">
-        <link rel="stylesheet" href="/css/gallery.css">
+        <!-- 加密功能 -->
+
+    <script src="https://cdn.bootcdn.net/ajax/libs/crypto-js/4.1.1/crypto-js.js"></script>
+    <script>
+        (function() {
+            let pwd = 'f401a18e94cab6367e33048dec59d01707d118be992d51b4507847450658c68e';
+            if (pwd && pwd.length > 0) {
+			let p = prompt('该相册已加密，请输入密码访问');
+			let np = CryptoJS.SHA256(p).toString();
+                if (pwd !== np ) {
+			   
+                    alert('密码错误，将返回主页！');
+                    location.href = '/';
+                }
+            }
+        })();
+    </script>
+
+
+
+
+
+
+<link rel="stylesheet" href="/css/gallery.css">
+
 
 <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.3/jquery.js"></script>
 
