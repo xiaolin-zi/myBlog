@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="zh-CN" color-mode="light">
+
+  <head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="keywords" content="" />
+  <meta name="author" content="小林" />
+  <meta name="description" content="简约个人博客" />
+  
+  
+  <title>
+    
+      JSON、AJAX、i18n 
+      
+      
+      |
+    
+     林のBlog
+  </title>
+
+  
+    <link rel="apple-touch-icon" href="/images/favicon.png">
+    <link rel="icon" href="/images/favicon.png">
+  
+
+  <!-- Raleway-Font -->
+  <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+
+  <!-- hexo site css -->
+  <link rel="stylesheet" href="/css/main.css" />
+  <link rel="stylesheet" href="//at.alicdn.com/t/font_1886449_67xjft27j1l.css" />
+  <!-- 代码块风格 -->
+  
+
+  <!-- jquery3.3.1 -->
+  
+    <script defer type="text/javascript" src="/plugins/jquery.min.js"></script>
+  
+
+  <!-- fancybox -->
+  
+    <link href="/plugins/jquery.fancybox.min.css" rel="stylesheet">
+    <script defer type="text/javascript" src="/plugins/jquery.fancybox.min.js"></script>
+  
+  
+<script src="/js/fancybox.js"></script>
+
+
+  
+
+  
+    <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+  
+
+  <script>
+    var html = document.documentElement
+    const colorMode = localStorage.getItem('color-mode')
+    if (colorMode) {
+      document.documentElement.setAttribute('color-mode', colorMode)
+    }
+  </script>
+<meta name="generator" content="Hexo 5.4.2"><link rel="alternate" href="/atom.xml" title="林のBlog" type="application/atom+xml">
+</head>
+
+
+  <body>
+    <div id="app">
+      <div class="header">
+  <div class="avatar">
+    <a href="/">
+      <!-- 头像取消懒加载，添加no-lazy -->
+      
+        <img no-lazy src="/images/avatar.png" alt="">
+      
+    </a>
+    <div class="nickname"><a href="/">小林</a></div>
+  </div>
+  <div class="navbar">
+    <ul>
+      
+        <li class="nav-item" data-path="/">
+          <a href="/">主页</a>
+        </li>
+      
+        <li class="nav-item" data-path="/archives/">
+          <a href="/archives/">文章</a>
+        </li>
+      
+        <li class="nav-item" data-path="/categories/">
+          <a href="/categories/">分类</a>
+        </li>
+      
+        <li class="nav-item" data-path="/friends/">
+          <a href="/friends/">朋友</a>
+        </li>
+      
+        <li class="nav-item" data-path="/about/">
+          <a href="/about/">关于</a>
+        </li>
+      
+        <li class="nav-item" data-path="/self/">
+          <a href="/self/">个人空间</a>
+        </li>
+      
+    </ul>
+  </div>
+</div>
+
+
+<script src="/js/activeNav.js"></script>
+
+
+
+      <div class="flex-container">
+        <!-- 文章详情页，展示文章具体内容，url形式：https://yoursite/文章标题/ -->
+<!-- 同时为「标签tag」，「朋友friend」，「分类categories」，「关于about」页面的承载页面，具体展示取决于page.type -->
+
+
+  <!-- LaTex Display -->
+
+  
+    <script async type="text/javascript" src="/plugins/mathjax/tex-chtml.js"></script>
+  
+  <script>
+    MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']]
+      }
+    }
+  </script>
+
+
+
+
+
+  <!-- clipboard -->
+
+  
+    <script async type="text/javascript" src="/plugins/clipboard.min.js"></script>
+  
+  
+<script src="/js/codeCopy.js"></script>
+
+
+
+
+
+
+
+  
+
+  
+
+  
+
+  
+  <!-- 文章内容页 url形式：https://yoursite/文章标题/ -->
+  <div class="container post-details" id="post-details">
+    <div class="post-content">
+      <div class="post-title">JSON、AJAX、i18n</div>
+      <div class="post-attach">
+        <span class="post-pubtime">
+          <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+          2023-02-13 11:57:14
+        </span>
+        
+              <span class="post-categories">
+                <i class="iconfont icon-bookmark" title="分类"></i>
+                
+                <span class="span--category">
+                  <a href="/categories/JavaWeb/" title="JavaWeb">
+                    <b>#</b> JavaWeb
+                  </a>
+                </span>
+                
+              </span>
+          
+      </div>
+      <div class="markdown-body">
+        <meta name="referrer" content="no-referrer" />
+
+<h1 id="JSON、AJAX、i18n"><a href="#JSON、AJAX、i18n" class="headerlink" title="JSON、AJAX、i18n"></a>JSON、AJAX、i18n</h1><h2 id="1、什么是JSON？"><a href="#1、什么是JSON？" class="headerlink" title="1、什么是JSON？"></a>1、什么是JSON？</h2><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\xiaolin\AppData\Roaming\Typora\typora-user-images\image-20220724093013125.png" alt="image-20220724093013125"></p>
+<h3 id="1-1、JSON在JavaScript中的使用"><a href="#1-1、JSON在JavaScript中的使用" class="headerlink" title="1.1、JSON在JavaScript中的使用"></a>1.1、JSON在JavaScript中的使用</h3><h4 id="1-1-1、JSON的定义"><a href="#1-1-1、JSON的定义" class="headerlink" title="1.1.1、JSON的定义"></a>1.1.1、JSON的定义</h4><figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">json是由键值对组成，并且由花括号（大括号）包围，每个键由引号引起来，键和值之间使用冒号进行分割，多组键值对之间进行逗号分隔。</span><br></pre></td></tr></table></figure>
+
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">// json的定义</span><br><span class="line">var jsonobj = &#123;</span><br><span class="line">   &quot;key1&quot; : 12,</span><br><span class="line">   &quot;key2&quot; : &quot;abc&quot;,</span><br><span class="line">   &quot;key3&quot; : true,</span><br><span class="line">   &quot;key4&quot; : [11,&quot;arr&quot;,false],</span><br><span class="line">   &quot;key5&quot; : &#123;</span><br><span class="line">      &quot;key5_1&quot; : 551,</span><br><span class="line">      &quot;key5_2&quot; : &quot;key5_2value&quot;</span><br><span class="line">   &#125;,</span><br><span class="line">   &quot;key6&quot; : [&#123;</span><br><span class="line">      &quot;key6_1_1&quot;: 6611,</span><br><span class="line">      &quot;key6_1_2&quot;: 6612</span><br><span class="line">   &#125;,&#123;</span><br><span class="line">      &quot;key6_2_1&quot;: 6621,</span><br><span class="line">      &quot;key6_2_2&quot;: 6622</span><br><span class="line">   &#125;]</span><br><span class="line">&#125;;</span><br></pre></td></tr></table></figure>
+
+<h4 id="1-1-2、json的访问"><a href="#1-1-2、json的访问" class="headerlink" title="1.1.2、json的访问"></a>1.1.2、json的访问</h4><p>json本身是一个对象，json中的key我们可以理解为是对象中的一个属性。json中的key访问就跟访问对象的属性一样，json对象.key</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;</span> <span class="string">&quot;http://www.w3.org/TR/html4/loose.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;pragma&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-cache&quot;</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;cache-control&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-cache&quot;</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Expires&quot;</span> <span class="attr">content</span>=<span class="string">&quot;0&quot;</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=UTF-8&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">title</span>&gt;</span>Insert title here<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">// json的定义</span></span></span><br><span class="line"><span class="language-javascript">         <span class="keyword">var</span> jsonobj = &#123;</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&quot;key1&quot;</span> : <span class="number">12</span>,</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&quot;key2&quot;</span> : <span class="string">&quot;abc&quot;</span>,</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&quot;key3&quot;</span> : <span class="literal">true</span>,</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&quot;key4&quot;</span> : [<span class="number">11</span>,<span class="string">&quot;arr&quot;</span>,<span class="literal">false</span>],</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&quot;key5&quot;</span> : &#123;</span></span><br><span class="line"><span class="language-javascript">               <span class="string">&quot;key5_1&quot;</span> : <span class="number">551</span>,</span></span><br><span class="line"><span class="language-javascript">               <span class="string">&quot;key5_2&quot;</span> : <span class="string">&quot;key5_2value&quot;</span></span></span><br><span class="line"><span class="language-javascript">            &#125;,</span></span><br><span class="line"><span class="language-javascript">            <span class="string">&quot;key6&quot;</span> : [&#123;</span></span><br><span class="line"><span class="language-javascript">               <span class="string">&quot;key6_1_1&quot;</span>: <span class="number">6611</span>,</span></span><br><span class="line"><span class="language-javascript">               <span class="string">&quot;key6_1_2&quot;</span>: <span class="number">6612</span></span></span><br><span class="line"><span class="language-javascript">            &#125;,&#123;</span></span><br><span class="line"><span class="language-javascript">               <span class="string">&quot;key6_2_1&quot;</span>: <span class="number">6621</span>,</span></span><br><span class="line"><span class="language-javascript">               <span class="string">&quot;key6_2_2&quot;</span>: <span class="number">6622</span></span></span><br><span class="line"><span class="language-javascript">            &#125;]</span></span><br><span class="line"><span class="language-javascript">         &#125;;</span></span><br><span class="line"><span class="language-javascript">         <span class="comment">//alert(typeof (jsonobj));//json就是一个对象</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">// json的访问</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">// alert(jsonobj.key1);</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">// alert(jsonobj.key2);</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">// alert(jsonobj.key3);</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">// alert(jsonobj.key4);</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">//数组</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">/*for (var i = 0; i&lt;jsonobj.key4.length;i++)&#123;</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">            alert(jsonobj.key4[i]);</span></span></span><br><span class="line"><span class="comment"><span class="language-javascript">         &#125;*/</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">//对象中的key</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">//alert(jsonobj.key5.key5_1);</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">//数组中的对象的值</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">//alert(jsonobj.key6);</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">//取出来每一个都是json对象</span></span></span><br><span class="line"><span class="language-javascript">         <span class="keyword">var</span> jsonItem = jsonobj.<span class="property">key6</span>[<span class="number">0</span>];</span></span><br><span class="line"><span class="language-javascript">         <span class="title function_">alert</span>(jsonItem.<span class="property">key6_1_1</span>);</span></span><br><span class="line"><span class="language-javascript">         <span class="title function_">alert</span>(jsonItem.<span class="property">key6_1_2</span>);</span></span><br><span class="line"><span class="language-javascript">         <span class="keyword">var</span> jsonItem2 = jsonobj.<span class="property">key6</span>[<span class="number">1</span>];</span></span><br><span class="line"><span class="language-javascript">         <span class="title function_">alert</span>(jsonItem2.<span class="property">key6_2_1</span>);</span></span><br><span class="line"><span class="language-javascript">         <span class="title function_">alert</span>(jsonItem2.<span class="property">key6_2_2</span>);</span></span><br><span class="line"><span class="language-javascript">         <span class="comment">// json对象转字符串</span></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">// json字符串转json对象</span></span></span><br><span class="line"><span class="language-javascript">      </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">body</span>&gt;</span></span><br><span class="line"></span><br><span class="line">   <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h4 id="1-1-3、json的两个常用方法"><a href="#1-1-3、json的两个常用方法" class="headerlink" title="1.1.3、json的两个常用方法"></a>1.1.3、json的两个常用方法</h4><p>json的存在有两种形式</p>
+<p>一种是，对象的形式存在，我们叫他json对象</p>
+<p>一种是，字符串的形式存在，我们叫他json字符串</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">一般我们要操作json中的数据的时候，需要json对象的格式</span><br><span class="line">一般我们要在客户端和服务器端之间进行数据交换的时候，使用json字符串</span><br></pre></td></tr></table></figure>
+
+
+
+<p>JSON.stringify():把json对象转换成为json字符串</p>
+<p>JSON.parse()：把json字符串转换成为json对象</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br></pre></td><td class="code"><pre><span class="line">&lt;!DOCTYPE html PUBLIC &quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot; &quot;http://www.w3.org/TR/html4/loose.dtd&quot;&gt;</span><br><span class="line">&lt;html&gt;</span><br><span class="line">   &lt;head&gt;</span><br><span class="line">      &lt;meta http-equiv=&quot;pragma&quot; content=&quot;no-cache&quot; /&gt;</span><br><span class="line">      &lt;meta http-equiv=&quot;cache-control&quot; content=&quot;no-cache&quot; /&gt;</span><br><span class="line">      &lt;meta http-equiv=&quot;Expires&quot; content=&quot;0&quot; /&gt;</span><br><span class="line">      &lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt;</span><br><span class="line">      &lt;title&gt;Insert title here&lt;/title&gt;</span><br><span class="line">      &lt;script type=&quot;text/javascript&quot;&gt;</span><br><span class="line">         // json的定义</span><br><span class="line">         var jsonobj = &#123;</span><br><span class="line">            &quot;key1&quot; : 12,</span><br><span class="line">            &quot;key2&quot; : &quot;abc&quot;,</span><br><span class="line">            &quot;key3&quot; : true,</span><br><span class="line">            &quot;key4&quot; : [11,&quot;arr&quot;,false],</span><br><span class="line">            &quot;key5&quot; : &#123;</span><br><span class="line">               &quot;key5_1&quot; : 551,</span><br><span class="line">               &quot;key5_2&quot; : &quot;key5_2value&quot;</span><br><span class="line">            &#125;,</span><br><span class="line">            &quot;key6&quot; : [&#123;</span><br><span class="line">               &quot;key6_1_1&quot;: 6611,</span><br><span class="line">               &quot;key6_1_2&quot;: 6612</span><br><span class="line">            &#125;,&#123;</span><br><span class="line">               &quot;key6_2_1&quot;: 6621,</span><br><span class="line">               &quot;key6_2_2&quot;: 6622</span><br><span class="line">            &#125;]</span><br><span class="line">         &#125;;</span><br><span class="line">         //alert(typeof (jsonobj));//json就是一个对象</span><br><span class="line">         // json的访问</span><br><span class="line">         // alert(jsonobj.key1);</span><br><span class="line">         // alert(jsonobj.key2);</span><br><span class="line">         // alert(jsonobj.key3);</span><br><span class="line">         // alert(jsonobj.key4);</span><br><span class="line">         //数组</span><br><span class="line">         /*for (var i = 0; i&lt;jsonobj.key4.length;i++)&#123;</span><br><span class="line">            alert(jsonobj.key4[i]);</span><br><span class="line">         &#125;*/</span><br><span class="line">         //对象中的key</span><br><span class="line">         //alert(jsonobj.key5.key5_1);</span><br><span class="line">         //数组中的对象的值</span><br><span class="line">         //alert(jsonobj.key6);</span><br><span class="line">         //取出来每一个都是json对象</span><br><span class="line">         // var jsonItem = jsonobj.key6[0];</span><br><span class="line">         // alert(jsonItem.key6_1_1);</span><br><span class="line">         // alert(jsonItem.key6_1_2);</span><br><span class="line">         // var jsonItem2 = jsonobj.key6[1];</span><br><span class="line">         // alert(jsonItem2.key6_2_1);</span><br><span class="line">         // alert(jsonItem2.key6_2_2);</span><br><span class="line"></span><br><span class="line">         // json对象转字符串</span><br><span class="line">         // alert(jsonobj);</span><br><span class="line">         var jsonObjString = JSON.stringify(jsonobj);//特别像java中对象的toString</span><br><span class="line">         //alert(jsonObjString);</span><br><span class="line">         // json字符串转json对象</span><br><span class="line">         var jsonStringObj = JSON.parse(jsonObjString);</span><br><span class="line">         alert(jsonStringObj);</span><br><span class="line">      &lt;/script&gt;</span><br><span class="line">   &lt;/head&gt;</span><br><span class="line">   &lt;body&gt;</span><br><span class="line"></span><br><span class="line">   &lt;/body&gt;</span><br><span class="line">&lt;/html&gt;</span><br></pre></td></tr></table></figure>
+
+<h3 id="1-2、JSON在java中的使用"><a href="#1-2、JSON在java中的使用" class="headerlink" title="1.2、JSON在java中的使用"></a>1.2、JSON在java中的使用</h3><p>一、javaBean和json的互转</p>
+<p>二、List和json的互转</p>
+<p>三、map和json的互转</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br></pre></td><td class="code"><pre><span class="line">package com.lxg.json;</span><br><span class="line"></span><br><span class="line">import com.google.gson.Gson;</span><br><span class="line">import com.google.gson.reflect.TypeToken;</span><br><span class="line">import com.lxg.pojo.Person;</span><br><span class="line">import org.junit.Test;</span><br><span class="line"></span><br><span class="line">import java.lang.reflect.Type;</span><br><span class="line">import java.util.ArrayList;</span><br><span class="line">import java.util.HashMap;</span><br><span class="line">import java.util.List;</span><br><span class="line">import java.util.Map;</span><br><span class="line"></span><br><span class="line">public class JsonTest &#123;</span><br><span class="line"></span><br><span class="line">//    一、javaBean和json的互转</span><br><span class="line"></span><br><span class="line">    @Test</span><br><span class="line">    public void test1()&#123;</span><br><span class="line">        Person person = new Person(1,&quot;小林&quot;);</span><br><span class="line">        //创建Gson对象实例</span><br><span class="line">        Gson gson = new Gson();</span><br><span class="line">        //toJson方法可以把java对象转换成为json字符串</span><br><span class="line">        String personJsonString = gson.toJson(person);</span><br><span class="line">        System.out.println(personJsonString);</span><br><span class="line">        //fromJson把json字符串转换回java对象</span><br><span class="line">        //第一个参数是json字符串，第二个参数是转换为的java实例类型</span><br><span class="line">        Person person1 = gson.fromJson(personJsonString, Person.class);</span><br><span class="line">        System.out.println(person1);</span><br><span class="line">    &#125;</span><br><span class="line">//    二、List和json的互转</span><br><span class="line">    @Test</span><br><span class="line">    public void test2()&#123;</span><br><span class="line">        List&lt;Person&gt; personList = new ArrayList&lt;&gt;();</span><br><span class="line">        personList.add(new Person(1,&quot;林&quot;));</span><br><span class="line">        personList.add(new Person(2,&quot;阿拉&quot;));</span><br><span class="line"></span><br><span class="line">        Gson gson = new Gson();</span><br><span class="line">        //把list转换为json字符串</span><br><span class="line">        String s = gson.toJson(personList);</span><br><span class="line">        System.out.println(s);</span><br><span class="line"></span><br><span class="line">        List&lt;Person&gt; list = gson.fromJson(s, new PersonListType().getType());</span><br><span class="line">        System.out.println(list);</span><br><span class="line">        Person person = list.get(0);</span><br><span class="line">        System.out.println(person);</span><br><span class="line"></span><br><span class="line">    &#125;</span><br><span class="line">//    三、map和json的互转</span><br><span class="line">    @Test</span><br><span class="line">    public void test3()&#123;</span><br><span class="line">        Map&lt;Integer,Person&gt; map = new HashMap&lt;&gt;();</span><br><span class="line">        map.put(1,new Person(1,&quot;lin&quot;));</span><br><span class="line">        map.put(2,new Person(2,&quot;lin22&quot;));</span><br><span class="line"></span><br><span class="line">        Gson gson = new Gson();</span><br><span class="line">        String s = gson.toJson(map);</span><br><span class="line">        System.out.println(s);</span><br><span class="line"></span><br><span class="line">//       Map&lt;Integer,Person&gt; map1 = gson.fromJson(s, new PersonMapType().getType());</span><br><span class="line">        Map&lt;Integer,Person&gt; map1 = gson.fromJson(s, new TypeToken&lt;HashMap&lt;Integer,Person&gt;&gt;()&#123;&#125;.getType());</span><br><span class="line">        System.out.println(map1);</span><br><span class="line"></span><br><span class="line">        Person p  = map1.get(1);</span><br><span class="line">        System.out.println(p);</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2、AJAX请求"><a href="#2、AJAX请求" class="headerlink" title="2、AJAX请求"></a>2、AJAX请求</h2><h3 id="2-1、什么是AJAX请求"><a href="#2-1、什么是AJAX请求" class="headerlink" title="2.1、什么是AJAX请求"></a>2.1、什么是AJAX请求</h3><p>AJAX即”Asynchronous JavaScript And XML“（异步JavaScript和XML），是指一种创建交互式网页应用的网页开发技术。</p>
+<p>ajax是一种浏览器通过js异步发起请求，局部更新页面的技术。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">局部：地址栏不变，原有的组件也不变，只是添加了一些新的内容</span><br><span class="line">异步：互不干扰，先执行</span><br></pre></td></tr></table></figure>
+
+
+
+<h3 id="2-2、原生AJAX请求的示例："><a href="#2-2、原生AJAX请求的示例：" class="headerlink" title="2.2、原生AJAX请求的示例："></a>2.2、原生AJAX请求的示例：</h3><figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;!DOCTYPE <span class="keyword">html</span> <span class="keyword">PUBLIC</span> <span class="string">&quot;-//W3C//DTD HTML 4.01 Transitional//EN&quot;</span> <span class="string">&quot;http://www.w3.org/TR/html4/loose.dtd&quot;</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;<span class="name">html</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">head</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;pragma&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-cache&quot;</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;cache-control&quot;</span> <span class="attr">content</span>=<span class="string">&quot;no-cache&quot;</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Expires&quot;</span> <span class="attr">content</span>=<span class="string">&quot;0&quot;</span> /&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">meta</span> <span class="attr">http-equiv</span>=<span class="string">&quot;Content-Type&quot;</span> <span class="attr">content</span>=<span class="string">&quot;text/html; charset=UTF-8&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">title</span>&gt;</span>Insert title here<span class="tag">&lt;/<span class="name">title</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">script</span> <span class="attr">type</span>=<span class="string">&quot;text/javascript&quot;</span>&gt;</span><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">         <span class="comment">//在这里使用JavaScript语言发起Ajax请求，访问服务器AjaxServlet中JavaScriptAjax</span></span></span><br><span class="line"><span class="language-javascript">         <span class="keyword">function</span> <span class="title function_">ajaxRequest</span>(<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript"><span class="comment">//              1、我们首先要创建XMLHttpRequest</span></span></span><br><span class="line"><span class="language-javascript">            <span class="keyword">var</span> xmlhttprequest = <span class="keyword">new</span> <span class="title class_">XMLHttpRequest</span> ();</span></span><br><span class="line"><span class="language-javascript"><span class="comment">//              2、调用open方法设置请求参数</span></span></span><br><span class="line"><span class="language-javascript">            xmlhttprequest.<span class="title function_">open</span>(<span class="string">&quot;GET&quot;</span>,<span class="string">&quot;http://localhost:8080/16_json_ajax_i18n/ajaxServlet?action=javaScriptAjax&quot;</span>,<span class="literal">true</span>);</span></span><br><span class="line"><span class="language-javascript">            <span class="comment">//4、在send方法前绑定onreadystatechange事件，处理请求完成后的操作。</span></span></span><br><span class="line"><span class="language-javascript">            xmlhttprequest.<span class="property">onreadystatechange</span> = <span class="keyword">function</span> (<span class="params"></span>) &#123;</span></span><br><span class="line"><span class="language-javascript">               <span class="keyword">if</span>(xmlhttprequest.<span class="property">readyState</span>==<span class="number">4</span> &amp;&amp; xmlhttprequest.<span class="property">status</span> == <span class="number">200</span>)&#123;</span></span><br><span class="line"><span class="language-javascript"></span></span><br><span class="line"><span class="language-javascript">                  <span class="keyword">var</span> jsonObj = <span class="title class_">JSON</span>.<span class="title function_">parse</span>(xmlhttprequest.<span class="property">responseText</span>);</span></span><br><span class="line"><span class="language-javascript">                  <span class="comment">//把响应的数据显示在页面上</span></span></span><br><span class="line"><span class="language-javascript">                  <span class="variable language_">document</span>.<span class="title function_">getElementById</span>(<span class="string">&quot;div01&quot;</span>).<span class="property">innerHTML</span> = <span class="string">&quot;编号：&quot;</span>+ jsonObj.<span class="property">id</span> + <span class="string">&quot;,姓名：&quot;</span>+ jsonObj.<span class="property">name</span>;</span></span><br><span class="line"><span class="language-javascript">                  <span class="comment">//alert(xmlhttprequest.responseText);</span></span></span><br><span class="line"><span class="language-javascript">               &#125;</span></span><br><span class="line"><span class="language-javascript">            &#125;</span></span><br><span class="line"><span class="language-javascript"><span class="comment">//              3、调用send方法发送请求</span></span></span><br><span class="line"><span class="language-javascript">            xmlhttprequest.<span class="title function_">send</span>();</span></span><br><span class="line"><span class="language-javascript"><span class="comment">//</span></span></span><br><span class="line"><span class="language-javascript">         &#125;</span></span><br><span class="line"><span class="language-javascript">      </span><span class="tag">&lt;/<span class="name">script</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">head</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;<span class="name">body</span>&gt;</span> </span><br><span class="line">      <span class="tag">&lt;<span class="name">button</span> <span class="attr">onclick</span>=<span class="string">&quot;ajaxRequest()&quot;</span>&gt;</span>ajax request<span class="tag">&lt;/<span class="name">button</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;<span class="name">div</span> <span class="attr">id</span>=<span class="string">&quot;div01&quot;</span>&gt;</span></span><br><span class="line">      <span class="tag">&lt;/<span class="name">div</span>&gt;</span></span><br><span class="line">   <span class="tag">&lt;/<span class="name">body</span>&gt;</span></span><br><span class="line"><span class="tag">&lt;/<span class="name">html</span>&gt;</span></span><br></pre></td></tr></table></figure>
+
+<h3 id="2-3、jQuery中的AJAX请求"><a href="#2-3、jQuery中的AJAX请求" class="headerlink" title="2.3、jQuery中的AJAX请求"></a>2.3、jQuery中的AJAX请求</h3><p>一、$.ajax 方法</p>
+<p>url 表示请求的地址</p>
+<p>type 表示请求的类型GET或POST请求</p>
+<p>data 表示发送给服务器的数据</p>
+<ul>
+<li>格式有两种：<ol>
+<li>name=vallue&amp;name=value</li>
+<li>{key:value}</li>
+</ol>
+</li>
+</ul>
+<p>success 请求成功，响应的回调函数</p>
+<p>dataType 响应的数据类型</p>
+<ul>
+<li>常用的数据类型有：<ol>
+<li>text表示纯文本</li>
+<li>xml表示xml数据</li>
+<li>json表示json对象</li>
+</ol>
+</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">// ajax请求</span><br><span class="line">$(&quot;#ajaxBtn&quot;).click(function()&#123;</span><br><span class="line">   $.ajax(&#123;</span><br><span class="line">      url:&quot;http://localhost:8080/16_json_ajax_i18n/ajaxServlet&quot;,</span><br><span class="line">      //data:&quot;action=jQueryAjax&quot;,</span><br><span class="line">      data:&#123;action : &quot;jQueryAjax&quot;&#125;,</span><br><span class="line">      type:&quot;GET&quot;,</span><br><span class="line">      success:function (data) &#123;</span><br><span class="line">         //alert(&quot;服务器返回的数据是：&quot;+data);</span><br><span class="line">         //var jsonObj = JSON.parse(data);</span><br><span class="line">         $(&quot;#msg&quot;).html(&quot;编号：&quot;+data.id+&quot;,姓名：&quot;+data.name);</span><br><span class="line">      &#125;,</span><br><span class="line">      dataType:&quot;json&quot;</span><br><span class="line">   &#125;);</span><br><span class="line">   alert(&quot;ajax btn&quot;);</span><br><span class="line"></span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>二、$.get 方法</p>
+<p>url 表示请求的地址</p>
+<p>type 返回的数据类型</p>
+<p>data 表示发送给服务器的数据</p>
+<p>callback 成功的回调函数</p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br></pre></td><td class="code"><pre><span class="line">// ajax--get请求</span><br><span class="line">$(&quot;#getBtn&quot;).click(function()&#123;</span><br><span class="line">   $.get(</span><br><span class="line">         &quot;http://localhost:8080/16_json_ajax_i18n/ajaxServlet&quot;,</span><br><span class="line">         &quot;action=jQueryGet&quot;,</span><br><span class="line">         function (data) &#123;</span><br><span class="line">            $(&quot;#msg&quot;).html(&quot;get编号：&quot;+data.id+&quot;,姓名：&quot;+data.name);</span><br><span class="line">         &#125;,</span><br><span class="line">         &quot;json&quot;</span><br><span class="line">   );</span><br><span class="line">   alert(&quot; get btn &quot;);</span><br><span class="line">   </span><br><span class="line">&#125;);</span><br><span class="line"></span><br><span class="line">// ajax--post请求</span><br><span class="line">$(&quot;#postBtn&quot;).click(function()&#123;</span><br><span class="line">   // post请求</span><br><span class="line">   $.post(</span><br><span class="line">         &quot;http://localhost:8080/16_json_ajax_i18n/ajaxServlet&quot;,</span><br><span class="line">         &quot;action=jQueryPost&quot;,</span><br><span class="line">         function (data) &#123;</span><br><span class="line">            $(&quot;#msg&quot;).html(&quot;post编号：&quot;+data.id+&quot;,姓名：&quot;+data.name);</span><br><span class="line">         &#125;,</span><br><span class="line">         &quot;json&quot;</span><br><span class="line">   );</span><br><span class="line">   alert(&quot;post btn&quot;);</span><br><span class="line">   </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p>三、$.getJson</p>
+<p>url</p>
+<p>data</p>
+<p>callback</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">// ajax--getJson请求</span><br><span class="line">$(&quot;#getJSONBtn&quot;).click(function()&#123;</span><br><span class="line">   // 调用</span><br><span class="line">   $.getJSON(</span><br><span class="line">         &quot;http://localhost:8080/16_json_ajax_i18n/ajaxServlet&quot;,</span><br><span class="line">         &quot;action=jQueryGetJSON&quot;,</span><br><span class="line">         function (data) &#123;</span><br><span class="line">            $(&quot;#msg&quot;).html(&quot;JSON编号：&quot;+data.id+&quot;,姓名：&quot;+data.name);</span><br><span class="line">         &#125;);</span><br><span class="line">   alert(&quot;getJSON btn&quot;);</span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<p> 表单序列化serialize()</p>
+<p>这个方法可以把表单中所有表单项的内容都获取到，并以name=value&amp;name=value的形式进行拼接</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">    // ajax请求</span><br><span class="line">   $(&quot;#submit&quot;).click(function()&#123;</span><br><span class="line">      // 把参数序列化</span><br><span class="line">      //alert($(&quot;#form01&quot;).serialize());</span><br><span class="line">      $.getJSON(</span><br><span class="line">            &quot;http://localhost:8080/16_json_ajax_i18n/ajaxServlet&quot;,</span><br><span class="line">            &quot;action=jQuerySerialize&amp;&quot;+$(&quot;#form01&quot;).serialize(),</span><br><span class="line">            function (data) &#123;</span><br><span class="line">               $(&quot;#msg&quot;).html(&quot;Serialize编号：&quot;+data.id+&quot;,姓名：&quot;+data.name);</span><br><span class="line">            &#125;);</span><br><span class="line">      alert(&quot;serialize()&quot;);</span><br><span class="line">   &#125;);</span><br><span class="line">   </span><br><span class="line">&#125;);</span><br></pre></td></tr></table></figure>
+
+<h2 id="3、i18n国际化（了解内容）"><a href="#3、i18n国际化（了解内容）" class="headerlink" title="3、i18n国际化（了解内容）"></a>3、i18n国际化（了解内容）</h2><h3 id="3-1、什么是i18n国际化？"><a href="#3-1、什么是i18n国际化？" class="headerlink" title="3.1、什么是i18n国际化？"></a>3.1、什么是i18n国际化？</h3><p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\xiaolin\AppData\Roaming\Typora\typora-user-images\image-20220724170033691.png" alt="image-20220724170033691"></p>
+<p><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAASwAAAEsCAMAAABOo35HAAAABGdBTUEAAK/INwWK6QAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAC9UExURVlZWdPT07KysmRkZIWFhfT09JmZmWZmZm9vb39/fxkZGUxMTDMzM3p6epCQkKamppubm729venp6cjIyN7e3tbW1s/Pz8LCwnx8fLS0tFZWVoiIiI+Pj6GhoeTk5Glpabu7u93d3evr66CgoJSUlKqqqsnJyeDg4Hd3d8PDw+Xl5bi4uNHR0dvb26Ojo6urq+fn51hYWDg4OCgoKHBwcK2traenp0FBQe7u7vHx8U5OTre3t8zMzHV1df///7GrnpQAAAA/dFJOU///////////////////////////////////////////////////////////////////////////////////AI4mfBcAAAUGSURBVHja7NoJb6M4GMZxY0NCD64kve/pMZ2d3Z297+X7f6zFNmBAMUXa6URl/q9UJSWPUPzrizFWRUlNLgEBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYYIEFAVhggQUWWGBBABZYYIEFFlgQgAUWWGCBBRYEYIEFFlhggQUBWGCBBRZYYEEAFlhggQUWWBCABRZYYIEFFgRggQUWWGCBBQFYYIEFFlhgQQAWWGCBBRZYEIAFFlhggQUWBGCBBRZYn6cCIcRXgvX/h9qcIVBqDdbEM8RCxGCB9QqXYRwHYDHBgwXWl8eKZKiESHI3Ba1kWs3fKixcaJUl1YyeBm7Ocq+yLItUiVBGnXxenSHJolIKEcwHq6ikbOX1YGVzQCTN8LPmSLreghUl9sN4Uw7yajMrLC0TZ1ImzqY6FEop0+pIaEN5HaoOxVuwEqFyc4I46uSlzOLqgxlh6UaR9l3VYWl9Fdoxb1Q90KJtu41pwwFW/WHhTtW8i7TafLCqRsk6bsGw63L9qurXRmuIlbT9lDQnlXU+nBFW1Q2qnZbDprWa2tjR90LZFqx1/+Td/HpGWLlrLDvIwTcx6dQ1Vrntbig68cDms3JwbA5Y1azs1ger6sNV/bbIw1jU81MvNAGrl58RVn8ozW+btF08iGFoAlYvP3csfVur1gJBEIA1uBmue5dhZDOyO2epbmgCVi8/I6x0MMHH9pjsTfBhNzQBq5uPZoQlB0uH3DZG4EZqQ26fL3sZq5uf09Ih6qw3i/pm6BZO0qZX7rrUS68Xsbr5ZE4rePMk08pk9aUZugfqppvs6AM1Acvlo/StP+6EbW06z8hJqxbYp2BZPQUnFsLsKuhQdaHqn5ewbF7KXIn0jWO5MqOQ7RaNLPtbNMmmhimj0GUmYLl8Gs0Lq4wyPbTu1l2QKqHSouzs3OlDIslW5SQsnY/NXmFplyNvEuuLV/Tau9BzwiraDUSwXmysztYWWNtL1psXeumgIrDGaqXvBfUuvtqUYI3V2t1wk1e2msFluJJm6zDJXv/fIfjPP7DAAgsssCiwwAILLLDAosACCyywwAKLAgsssMACC6zt9fDz/v75tyOB+98PD2+ORgKffjw4OP1uJPDxl+Xy8v1I4MPF3t7VNyOB4/vF4uzdzrG+39f1kz/w66Guv/yBvw90KX/gZKkr8Qf+2dOV+gNHC12/7RxrabD2/a31bLAO/a11YbAO/K21MFhLf2s9Gqw9f2vdGqzFu11jnVusE2/gxmI9eQOnFuvYG7i0WH7uK4t15w2cWazrXWP9a7H8f/bQYvm/6IPF+sF/pVssf19Ii/WH/0K2WH/uGuvEWC39gSdj9Twy+Rqri5EZx1gt/IE7Y/XoD1wbq9vd3w1PlufnD2OBp+ebm/uxwPHF6emnscDR4vLy41jg7vHq6sNY4Pr27OyYdRaLUrDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssMCiwAILLLDAAosCCyywwAILLAossMACCyywKLDAAgsssL6u+k+AAQCR9eHtLKvLfwAAAABJRU5ErkJggg==" data-original="C:\Users\xiaolin\AppData\Roaming\Typora\typora-user-images\image-20220724171427433.png" alt="image-20220724171427433"></p>
+
+      </div>
+      
+        <div class="prev-or-next">
+          <div class="post-foot-next">
+            
+              <a href="/2023/02/13/JSP/" target="_self">
+                <i class="iconfont icon-chevronleft"></i>
+                <span>上一页</span>
+              </a>
+            
+          </div>
+          <div class="post-attach">
+            <span class="post-pubtime">
+              <i class="iconfont icon-updatetime mr-10" title="更新时间"></i>
+              2023-02-13 11:57:14
+            </span>
+            
+                  <span class="post-categories">
+                    <i class="iconfont icon-bookmark" title="分类"></i>
+                    
+                    <span class="span--category">
+                      <a href="/categories/JavaWeb/" title="JavaWeb">
+                        <b>#</b> JavaWeb
+                      </a>
+                    </span>
+                    
+                  </span>
+              
+          </div>
+          <div class="post-foot-prev">
+            
+              <a href="/2023/02/13/JQuery%E5%8A%A8%E7%94%BB/" target="_self">
+                <span>下一页</span>
+                <i class="iconfont icon-chevronright"></i>
+              </a>
+            
+          </div>
+        </div>
+      
+    </div>
+    
+  <div id="btn-catalog" class="btn-catalog">
+    <i class="iconfont icon-catalog"></i>
+  </div>
+  <div class="post-catalog hidden" id="catalog">
+    <div class="title">目录</div>
+    <div class="catalog-content">
+      
+        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#JSON%E3%80%81AJAX%E3%80%81i18n"><span class="toc-text">JSON、AJAX、i18n</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AFJSON%EF%BC%9F"><span class="toc-text">1、什么是JSON？</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-1%E3%80%81JSON%E5%9C%A8JavaScript%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">1.1、JSON在JavaScript中的使用</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-1%E3%80%81JSON%E7%9A%84%E5%AE%9A%E4%B9%89"><span class="toc-text">1.1.1、JSON的定义</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-2%E3%80%81json%E7%9A%84%E8%AE%BF%E9%97%AE"><span class="toc-text">1.1.2、json的访问</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#1-1-3%E3%80%81json%E7%9A%84%E4%B8%A4%E4%B8%AA%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">1.1.3、json的两个常用方法</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#1-2%E3%80%81JSON%E5%9C%A8java%E4%B8%AD%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">1.2、JSON在java中的使用</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81AJAX%E8%AF%B7%E6%B1%82"><span class="toc-text">2、AJAX请求</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AFAJAX%E8%AF%B7%E6%B1%82"><span class="toc-text">2.1、什么是AJAX请求</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81%E5%8E%9F%E7%94%9FAJAX%E8%AF%B7%E6%B1%82%E7%9A%84%E7%A4%BA%E4%BE%8B%EF%BC%9A"><span class="toc-text">2.2、原生AJAX请求的示例：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81jQuery%E4%B8%AD%E7%9A%84AJAX%E8%AF%B7%E6%B1%82"><span class="toc-text">2.3、jQuery中的AJAX请求</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81i18n%E5%9B%BD%E9%99%85%E5%8C%96%EF%BC%88%E4%BA%86%E8%A7%A3%E5%86%85%E5%AE%B9%EF%BC%89"><span class="toc-text">3、i18n国际化（了解内容）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81%E4%BB%80%E4%B9%88%E6%98%AFi18n%E5%9B%BD%E9%99%85%E5%8C%96%EF%BC%9F"><span class="toc-text">3.1、什么是i18n国际化？</span></a></li></ol></li></ol></li></ol>
+      
+    </div>
+  </div>
+
+  
+<script src="/js/catalog.js"></script>
+
+
+
+
+    
+      <div class="comments-container">
+        
+
+
+
+
+  
+    <script async type="text/javascript" src="/plugins/valine.min.js" onload="loadValineSuc(this)"></script>
+  
+
+  <div id="vcomments"></div>
+
+  <script>
+    function loadValineSuc() {
+      new Valine({
+        el: '#vcomments',
+        appId: 'mJhaaexyDI9yxcS7On6CDmag-gzGzoHsz',
+        appKey: 'nwtGeGf6AB1Y93cPDyf8eebW',
+        placeholder: 'Welcome!',
+        avatar: 'monsterid',
+        lang: 'zh-CN'
+      })
+    }
+  </script>
+
+    <style>
+      .comments-container .v .vempty {
+        display: none!important;
+      }
+    </style>
+
+
+
+
+      </div>
+    
+  </div>
+
+
+        
+<div class="footer">
+  <div class="social">
+    <ul>
+      
+        <li>
+          <a title="github" target="_blank" rel="noopener" href="https://github.com/linXiao01">
+            <i class="iconfont icon-github"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="wechat" target="_blank" rel="noopener" href="https://www.lookforward.top/images/wx.jpg">
+            <i class="iconfont icon-wechat"></i>
+          </a>
+        </li>
+      
+        <li>
+          <a title="rss" href="/atom.xml">
+            <i class="iconfont icon-rss"></i>
+          </a>
+        </li>
+      
+    </ul>
+  </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Copyright © 2023 Oranges</a>
+        
+    </div>
+  
+    
+    <div class="footer-more">
+      
+        <a target="_blank" rel="noopener" href="https://github.com/zchengsite/hexo-theme-oranges">Theme by Oranges | Powered by Hexo</a>
+        
+    </div>
+  
+  
+    <div class="footer-views">
+      
+          本站总访问量<span id="busuanzi_value_site_pv"></span>次
+        
+      
+          本文总阅读量<span id="busuanzi_value_page_pv"></span>次
+        
+      
+          本站访客数<span id="busuanzi_value_site_uv"></span>人
+        
+      
+    </div>
+  
+</div>
+
+      </div>
+
+      <div class="tools-bar">
+        <div class="back-to-top tools-bar-item hidden">
+  <a href="javascript: void(0)">
+    <i class="iconfont icon-chevronup"></i>
+  </a>
+</div>
+
+
+<script src="/js/backtotop.js"></script>
+
+
+
+        
+  <div class="search-icon tools-bar-item" id="search-icon">
+    <a href="javascript: void(0)">
+      <i class="iconfont icon-search"></i>
+    </a>
+  </div>
+
+  <div class="search-overlay hidden">
+    <div class="search-content" tabindex="0">
+      <div class="search-title">
+        <span class="search-icon-input">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-search"></i>
+          </a>
+        </span>
+        
+          <input type="text" class="search-input" id="search-input" placeholder="搜索...">
+        
+        <span class="search-close-icon" id="search-close-icon">
+          <a href="javascript: void(0)">
+            <i class="iconfont icon-close"></i>
+          </a>
+        </span>
+      </div>
+      <div class="search-result" id="search-result"></div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    var inputArea = document.querySelector("#search-input")
+    var searchOverlayArea = document.querySelector(".search-overlay")
+
+    inputArea.onclick = function() {
+      getSearchFile()
+      this.onclick = null
+    }
+
+    inputArea.onkeydown = function() {
+      if(event.keyCode == 13)
+        return false
+    }
+
+    function openOrHideSearchContent() {
+      let isHidden = searchOverlayArea.classList.contains('hidden')
+      if (isHidden) {
+        searchOverlayArea.classList.remove('hidden')
+        document.body.classList.add('hidden')
+        // inputArea.focus()
+      } else {
+        searchOverlayArea.classList.add('hidden')
+        document.body.classList.remove('hidden')
+      }
+    }
+
+    function blurSearchContent(e) {
+      if (e.target === searchOverlayArea) {
+        openOrHideSearchContent()
+      }
+    }
+
+    document.querySelector("#search-icon").addEventListener("click", openOrHideSearchContent, false)
+    document.querySelector("#search-close-icon").addEventListener("click", openOrHideSearchContent, false)
+    searchOverlayArea.addEventListener("click", blurSearchContent, false)
+
+    var searchFunc = function (path, search_id, content_id) {
+      'use strict';
+      var $input = document.getElementById(search_id);
+      var $resultContent = document.getElementById(content_id);
+      $resultContent.innerHTML = "<ul><span class='local-search-empty'>首次搜索，正在载入索引文件，请稍后……<span></ul>";
+      $.ajax({
+        // 0x01. load xml file
+        url: path,
+        dataType: "xml",
+        success: function (xmlResponse) {
+          // 0x02. parse xml file
+          var datas = $("entry", xmlResponse).map(function () {
+            return {
+              title: $("title", this).text(),
+              content: $("content", this).text(),
+              url: $("url", this).text()
+            };
+          }).get();
+          $resultContent.innerHTML = "";
+
+          $input.addEventListener('input', function () {
+            // 0x03. parse query to keywords list
+            var str = '<ul class=\"search-result-list\">';
+            var keywords = this.value.trim().toLowerCase().split(/[\s\-]+/);
+            $resultContent.innerHTML = "";
+            if (this.value.trim().length <= 0) {
+              return;
+            }
+            // 0x04. perform local searching
+            datas.forEach(function (data) {
+              var isMatch = true;
+              var content_index = [];
+              if (!data.title || data.title.trim() === '') {
+                data.title = "Untitled";
+              }
+              var orig_data_title = data.title.trim();
+              var data_title = orig_data_title.toLowerCase();
+              var orig_data_content = data.content.trim().replace(/<[^>]+>/g, "");
+              var data_content = orig_data_content.toLowerCase();
+              var data_url = data.url;
+              var index_title = -1;
+              var index_content = -1;
+              var first_occur = -1;
+              // only match artiles with not empty contents
+              if (data_content !== '') {
+                keywords.forEach(function (keyword, i) {
+                  index_title = data_title.indexOf(keyword);
+                  index_content = data_content.indexOf(keyword);
+
+                  if (index_title < 0 && index_content < 0) {
+                    isMatch = false;
+                  } else {
+                    if (index_content < 0) {
+                      index_content = 0;
+                    }
+                    if (i == 0) {
+                      first_occur = index_content;
+                    }
+                    // content_index.push({index_content:index_content, keyword_len:keyword_len});
+                  }
+                });
+              } else {
+                isMatch = false;
+              }
+              // 0x05. show search results
+              if (isMatch) {
+                str += "<li><a href='" + data_url + "' class='search-result-title'>" + orig_data_title + "</a>";
+                var content = orig_data_content;
+                if (first_occur >= 0) {
+                  // cut out 100 characters
+                  var start = first_occur - 20;
+                  var end = first_occur + 80;
+
+                  if (start < 0) {
+                    start = 0;
+                  }
+
+                  if (start == 0) {
+                    end = 100;
+                  }
+
+                  if (end > content.length) {
+                    end = content.length;
+                  }
+
+                  var match_content = content.substr(start, end);
+
+                  // highlight all keywords
+                  keywords.forEach(function (keyword) {
+                    var regS = new RegExp(keyword, "gi");
+                    match_content = match_content.replace(regS, "<span class=\"search-keyword\">" + keyword + "</span>");
+                  });
+
+                  str += "<p class=\"search-result-abstract\">" + match_content + "...</p>"
+                }
+                str += "</li>";
+              }
+            });
+            str += "</ul>";
+            if (str.indexOf('<li>') === -1) {
+              return $resultContent.innerHTML = "<ul><span class='local-search-empty'>没有找到内容，请尝试更换检索词。<span></ul>";
+            }
+            $resultContent.innerHTML = str;
+          });
+        },
+        error: function(xhr, status, error) {
+          $resultContent.innerHTML = ""
+          if (xhr.status === 404) {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>未找到search.xml文件，具体请参考：<a href='https://github.com/zchengsite/hexo-theme-oranges#configuration' target='_black'>configuration</a><span></ul>";
+          } else {
+            $resultContent.innerHTML = "<ul><span class='local-search-empty'>请求失败，尝试重新刷新页面或稍后重试。<span></ul>";
+          }
+        }
+      });
+      $(document).on('click', '#search-close-icon', function() {
+        $('#search-input').val('');
+        $('#search-result').html('');
+      });
+    }
+
+    var getSearchFile = function() {
+        var path = "/search.xml";
+        searchFunc(path, 'search-input', 'search-result');
+    }
+  </script>
+
+
+
+
+        
+  <div class="tools-bar-item theme-icon" id="switch-color-scheme">
+    <a href="javascript: void(0)">
+      <i id="theme-icon" class="iconfont icon-moon"></i>
+    </a>
+  </div>
+
+  
+<script src="/js/colorscheme.js"></script>
+
+
+
+
+
+        
+  
+    <div class="share-icon tools-bar-item">
+      <a href="javascript: void(0)" id="share-icon">
+        <i class="iconfont iconshare"></i>
+      </a>
+      <div class="share-content hidden">
+        
+          <a class="share-item" href="https://twitter.com/intent/tweet?text=' + JSON%E3%80%81AJAX%E3%80%81i18n + '&url=' + http%3A%2F%2Flookforward.top%2F2023%2F02%2F13%2FJSON%25E3%2580%2581AJAX%25E3%2580%2581i18n%2F + '" target="_blank" title="Twitter">
+            <i class="iconfont icon-twitter"></i>
+          </a>
+        
+        
+          <a class="share-item" href="https://www.facebook.com/sharer.php?u=http://lookforward.top/2023/02/13/JSON%E3%80%81AJAX%E3%80%81i18n/" target="_blank" title="Facebook">
+            <i class="iconfont icon-facebooksquare"></i>
+          </a>
+        
+      </div>
+    </div>
+  
+  
+<script src="/js/shares.js"></script>
+
+
+
+      </div>
+    </div>
+  
+        <style>
+            [bg-lazy] {
+                background-image: none !important;
+                background-color: #eee !important;
+            }
+        </style>
+        <script>
+            window.imageLazyLoadSetting = {
+                isSPA: false,
+                preloadRatio: 1,
+                processImages: null,
+            };
+        </script><script>window.addEventListener("load",function(){var t=/\.(gif|jpg|jpeg|tiff|png)$/i,r=/^data:image\/[a-z]+;base64,/;Array.prototype.slice.call(document.querySelectorAll("img[data-original]")).forEach(function(a){var e=a.parentNode;"A"===e.tagName&&(e.href.match(t)||e.href.match(r))&&(e.href=a.dataset.original)})});</script><script>!function(r){r.imageLazyLoadSetting.processImages=t;var e=r.imageLazyLoadSetting.isSPA,n=r.imageLazyLoadSetting.preloadRatio||1,c=a();function a(){var t=Array.prototype.slice.call(document.querySelectorAll("img[data-original]")),e=Array.prototype.slice.call(document.querySelectorAll("[bg-lazy]"));return t.concat(e)}function t(){e&&(c=a());for(var t,o=0;o<c.length;o++)0<=(t=(t=c[o]).getBoundingClientRect()).bottom&&0<=t.left&&t.top<=(r.innerHeight*n||document.documentElement.clientHeight*n)&&function(){var t,e,n,a,i=c[o];e=function(){c=c.filter(function(t){return i!==t}),r.imageLazyLoadSetting.onImageLoaded&&r.imageLazyLoadSetting.onImageLoaded(i)},(t=i).hasAttribute("bg-lazy")?(t.removeAttribute("bg-lazy"),e&&e()):(n=new Image,a=t.getAttribute("data-original"),n.onload=function(){t.src=a,t.removeAttribute("data-original"),e&&e()},t.src!==a&&(n.src=a))}()}function i(){clearTimeout(t.tId),t.tId=setTimeout(t,500)}t(),document.addEventListener("scroll",i),r.addEventListener("resize",i),r.addEventListener("orientationchange",i)}(this);</script></body>
+</html>

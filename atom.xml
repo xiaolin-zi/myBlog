@@ -6,7 +6,7 @@
   <link href="http://lookforward.top/atom.xml" rel="self"/>
   
   <link href="http://lookforward.top/"/>
-  <updated>2022-11-02T14:14:28.680Z</updated>
+  <updated>2023-02-13T04:26:34.621Z</updated>
   <id>http://lookforward.top/</id>
   
   <author>
@@ -17,61 +17,11 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>Git学习笔记</title>
-    <link href="http://lookforward.top/2023/02/08/Git/"/>
-    <id>http://lookforward.top/2023/02/08/Git/</id>
-    <published>2023-02-08T11:31:31.697Z</published>
-    <updated>2022-11-02T14:14:28.680Z</updated>
-    
-    
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-
-&lt;h1 id=&quot;Git&quot;&gt;&lt;a href=&quot;#Git&quot; class=&quot;headerlink&quot; title=&quot;Git&quot;&gt;&lt;/a&gt;Git&lt;/h1&gt;&lt;h2 id=&quot;一、需要掌握的知识点&quot;&gt;&lt;a href=&quot;#一、需要掌握的知识点&quot; class=&quot;headerlink&quot; title=&quot;一、需要掌握的知识点&quot;&gt;&lt;/a&gt;一、需要掌握的知识点&lt;/h2&gt;&lt;h3 id=&quot;1-1、Git&quot;&gt;&lt;a href=&quot;#1-1、Git&quot; class=&quot;headerlink&quot; title=&quot;1.1、Git&quot;&gt;&lt;/a&gt;1.1、Git&lt;/h3&gt;&lt;p&gt;1、Git介绍，分布式版本控制工具  VS  集中式版本控制工具&lt;/p&gt;
-&lt;p&gt;2、Git安装，基于官网发布的最新版本2.31.1安装讲解&lt;/p&gt;
-&lt;p&gt;3、Git命令，基于开发案例，详细讲解git的常用命令&lt;/p&gt;
-&lt;p&gt;4、Git分支，分支特性，分支创建，分支转换，分支合并，代码合并冲突解决&lt;/p&gt;
-&lt;p&gt;5、Idea集成Git&lt;/p&gt;</summary>
-    
-    
-    
-    <category term="Git学习笔记" scheme="http://lookforward.top/categories/Git%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript高级篇</title>
-    <link href="http://lookforward.top/2022/11/02/javaScript%E9%AB%98%E7%BA%A7/"/>
-    <id>http://lookforward.top/2022/11/02/javaScript%E9%AB%98%E7%BA%A7/</id>
-    <published>2022-11-02T15:19:46.000Z</published>
-    <updated>2022-11-02T14:59:04.285Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# js高级
-
-&lt;p&gt;[Toc]&lt;/p&gt;
-&lt;h2 id=&quot;一、基础总结深入&quot;&gt;&lt;a href=&quot;#一、基础总结深入&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端学习笔记" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>JavaScript</title>
-    <link href="http://lookforward.top/2022/11/02/%E5%B0%9A%E7%A1%85%E8%B0%B7JavaScript/"/>
-    <id>http://lookforward.top/2022/11/02/%E5%B0%9A%E7%A1%85%E8%B0%B7JavaScript/</id>
-    <published>2022-11-02T14:39:46.000Z</published>
-    <updated>2022-11-02T14:58:55.921Z</updated>
+    <title>MySQL</title>
+    <link href="http://lookforward.top/2023/02/13/MySQL%20/"/>
+    <id>http://lookforward.top/2023/02/13/MySQL%20/</id>
+    <published>2023-02-13T04:25:26.614Z</published>
+    <updated>2023-02-13T04:26:34.621Z</updated>
     
     
       
@@ -80,112 +30,7 @@
         
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
 
-&lt;h1 id=&quot;JavaScript&quot;&gt;&lt;a href=&quot;#JavaScript&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端学习笔记" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ES6</title>
-    <link href="http://lookforward.top/2022/11/02/ECMAScript6%EF%BC%88%E5%8C%85%E5%90%ABes6-es11%EF%BC%89/"/>
-    <id>http://lookforward.top/2022/11/02/ECMAScript6%EF%BC%88%E5%8C%85%E5%90%ABes6-es11%EF%BC%89/</id>
-    <published>2022-11-02T14:19:46.000Z</published>
-    <updated>2022-11-02T14:57:18.250Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# ECMAScript6（包含es6-es11）
-
-&lt;p&gt;[Toc]&lt;/p&gt;
-&lt;h2 id=&quot;一、强大的babel&quot;&gt;&lt;a href=&quot;#一、强大的babel&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="前端学习笔记" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>SpringSecurity</title>
-    <link href="http://lookforward.top/2022/10/22/Spring%20Security/"/>
-    <id>http://lookforward.top/2022/10/22/Spring%20Security/</id>
-    <published>2022-10-22T09:30:46.000Z</published>
-    <updated>2022-10-22T16:11:54.075Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# Spring Security
-
-&lt;h2 id=&quot;一、Spring-Security框架简介&quot;&gt;&lt;a href=&quot;#一、Spring-Security框架简介&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Spring全家桶" scheme="http://lookforward.top/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Spring</title>
-    <link href="http://lookforward.top/2022/10/22/Spring5/"/>
-    <id>http://lookforward.top/2022/10/22/Spring5/</id>
-    <published>2022-10-22T09:30:46.000Z</published>
-    <updated>2022-10-22T16:11:37.176Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# Spring5框架
-
-&lt;h2 id=&quot;一、Spring框架概述&quot;&gt;&lt;a href=&quot;#一、Spring框架概述&quot; class=&quot;headerlink&quot;</summary>
-        
-      
-    
-    
-    
-    <category term="Spring全家桶" scheme="http://lookforward.top/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
-    
-    
-  </entry>
-  
-  <entry>
-    <title>MyBatis</title>
-    <link href="http://lookforward.top/2022/10/22/MyBatis%E7%AC%94%E8%AE%B0/"/>
-    <id>http://lookforward.top/2022/10/22/MyBatis%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-10-22T09:19:46.000Z</published>
-    <updated>2022-11-02T14:54:03.761Z</updated>
-    
-    
-      
-      
-        
-        
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# Mybatis简介
-## MyBatis历史
--    MyBatis最初是Apache的一个开源项目iBatis, 2010年6月这个项目由Apache Software</summary>
+&lt;h1 id=&quot;数据库&quot;&gt;&lt;a href=&quot;#数据库&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -197,11 +42,11 @@
   </entry>
   
   <entry>
-    <title>SpringMVC</title>
-    <link href="http://lookforward.top/2022/10/22/SpringMVC%E7%AC%94%E8%AE%B0/"/>
-    <id>http://lookforward.top/2022/10/22/SpringMVC%E7%AC%94%E8%AE%B0/</id>
-    <published>2022-10-22T09:19:46.000Z</published>
-    <updated>2022-10-22T16:11:13.224Z</updated>
+    <title>Vue3</title>
+    <link href="http://lookforward.top/2023/02/13/vue3%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/"/>
+    <id>http://lookforward.top/2023/02/13/vue3%E5%BF%AB%E9%80%9F%E4%B8%8A%E6%89%8B/</id>
+    <published>2023-02-13T04:23:34.946Z</published>
+    <updated>2023-02-13T04:29:47.901Z</updated>
     
     
       
@@ -210,8 +55,80 @@
         
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
 
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;一、SpringMVC简介&quot;&gt;&lt;a href=&quot;#一、SpringMVC简介&quot; class=&quot;headerlink&quot;</summary>
+&lt;h1 id=&quot;Vue3快速上手&quot;&gt;&lt;a href=&quot;#Vue3快速上手&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Vue</title>
+    <link href="http://lookforward.top/2023/02/13/Vue%EF%BC%88%E5%B0%9A%E7%A1%85%E8%B0%B7%EF%BC%89/"/>
+    <id>http://lookforward.top/2023/02/13/Vue%EF%BC%88%E5%B0%9A%E7%A1%85%E8%B0%B7%EF%BC%89/</id>
+    <published>2023-02-13T04:23:27.577Z</published>
+    <updated>2023-02-13T04:24:48.108Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;Vue（尚硅谷）&quot;&gt;&lt;a href=&quot;#Vue（尚硅谷）&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Ajax</title>
+    <link href="http://lookforward.top/2023/02/13/Ajax/"/>
+    <id>http://lookforward.top/2023/02/13/Ajax/</id>
+    <published>2023-02-13T04:22:59.520Z</published>
+    <updated>2023-02-13T04:24:24.789Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;Ajax&quot;&gt;&lt;a href=&quot;#Ajax&quot; class=&quot;headerlink&quot; title=&quot;Ajax&quot;&gt;&lt;/a&gt;Ajax&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="前端" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>SpringBoot-02</title>
+    <link href="http://lookforward.top/2023/02/13/springboot02/"/>
+    <id>http://lookforward.top/2023/02/13/springboot02/</id>
+    <published>2023-02-13T04:20:55.260Z</published>
+    <updated>2023-02-13T04:22:12.624Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;h2 id=&quot;45、web实验-抽取公共页面&quot;&gt;&lt;a href=&quot;#45、web实验-抽取公共页面&quot; class=&quot;headerlink&quot; title=&quot;45、web实验-抽取公共页面&quot;&gt;&lt;/a&gt;45、web实验-抽取公共页面&lt;/h2&gt;&lt;p&gt;&lt;a</summary>
         
       
     
@@ -223,37 +140,34 @@
   </entry>
   
   <entry>
-    <title>MyBatis-Plus</title>
-    <link href="http://lookforward.top/2022/10/22/MyBatis-Plus/"/>
-    <id>http://lookforward.top/2022/10/22/MyBatis-Plus/</id>
-    <published>2022-10-22T08:22:46.000Z</published>
-    <updated>2022-10-22T16:12:26.981Z</updated>
+    <title>SpringBoot-01</title>
+    <link href="http://lookforward.top/2023/02/13/springboot01/"/>
+    <id>http://lookforward.top/2023/02/13/springboot01/</id>
+    <published>2023-02-13T04:20:48.548Z</published>
+    <updated>2023-02-13T04:21:55.968Z</updated>
     
     
       
       
         
         
-    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# 一、MyBatis-Plus
-
-&lt;h2 id=&quot;1-简介&quot;&gt;&lt;a href=&quot;#1-简介&quot; class=&quot;headerlink&quot;</summary>
+    <summary type="html">&lt;h2 id=&quot;01、基础入门-SpringBoot2课程介绍&quot;&gt;&lt;a href=&quot;#01、基础入门-SpringBoot2课程介绍&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="数据库" scheme="http://lookforward.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="Spring全家桶" scheme="http://lookforward.top/categories/Spring%E5%85%A8%E5%AE%B6%E6%A1%B6/"/>
     
     
   </entry>
   
   <entry>
-    <title>Linux</title>
-    <link href="http://lookforward.top/2022/10/22/Linux/"/>
-    <id>http://lookforward.top/2022/10/22/Linux/</id>
-    <published>2022-10-22T08:20:46.000Z</published>
-    <updated>2022-11-02T14:53:59.347Z</updated>
+    <title>Redis</title>
+    <link href="http://lookforward.top/2023/02/13/Redis/"/>
+    <id>http://lookforward.top/2023/02/13/Redis/</id>
+    <published>2023-02-13T04:19:04.157Z</published>
+    <updated>2023-02-13T04:19:39.549Z</updated>
     
     
       
@@ -261,26 +175,24 @@
         
         
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# Linux
 
-&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h1 id=&quot;一、基础&quot;&gt;&lt;a href=&quot;#一、基础&quot; class=&quot;headerlink&quot;</summary>
+&lt;h1 id=&quot;Redis&quot;&gt;&lt;a href=&quot;#Redis&quot; class=&quot;headerlink&quot; title=&quot;Redis&quot;&gt;&lt;/a&gt;Redis&lt;/h1&gt;&lt;h2</summary>
         
       
     
     
     
-    <category term="操作系统" scheme="http://lookforward.top/categories/%E6%93%8D%E4%BD%9C%E7%B3%BB%E7%BB%9F/"/>
+    <category term="消息缓存" scheme="http://lookforward.top/categories/%E6%B6%88%E6%81%AF%E7%BC%93%E5%AD%98/"/>
     
     
   </entry>
   
   <entry>
-    <title>JDBCTemplate</title>
-    <link href="http://lookforward.top/2022/10/22/jdbcTemplate%EF%BC%88%E6%A6%82%E5%BF%B5%E5%92%8C%E5%87%86%E5%A4%87%EF%BC%89/"/>
-    <id>http://lookforward.top/2022/10/22/jdbcTemplate%EF%BC%88%E6%A6%82%E5%BF%B5%E5%92%8C%E5%87%86%E5%A4%87%EF%BC%89/</id>
-    <published>2022-10-22T08:19:46.000Z</published>
-    <updated>2022-10-22T16:12:43.731Z</updated>
+    <title>RabbitMQ</title>
+    <link href="http://lookforward.top/2023/02/13/RabbitMQ/"/>
+    <id>http://lookforward.top/2023/02/13/RabbitMQ/</id>
+    <published>2023-02-13T04:18:15.087Z</published>
+    <updated>2023-02-13T04:18:54.589Z</updated>
     
     
       
@@ -288,25 +200,24 @@
         
         
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# jdbcTemplate（概念和准备）
 
-&lt;h2 id=&quot;1、什么是JdbcTemplate&quot;&gt;&lt;a href=&quot;#1、什么是JdbcTemplate&quot;</summary>
+&lt;h1 id=&quot;RabbitMQ&quot;&gt;&lt;a href=&quot;#RabbitMQ&quot; class=&quot;headerlink&quot;</summary>
         
       
     
     
     
-    <category term="数据库" scheme="http://lookforward.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="消息队列" scheme="http://lookforward.top/categories/%E6%B6%88%E6%81%AF%E9%98%9F%E5%88%97/"/>
     
     
   </entry>
   
   <entry>
-    <title>书城项目</title>
-    <link href="http://lookforward.top/2022/10/22/%E4%B9%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/"/>
-    <id>http://lookforward.top/2022/10/22/%E4%B9%A6%E5%9F%8E%E9%A1%B9%E7%9B%AE/</id>
-    <published>2022-10-22T08:04:46.000Z</published>
-    <updated>2022-11-02T14:53:44.030Z</updated>
+    <title>Thymeleaf</title>
+    <link href="http://lookforward.top/2023/02/13/Thymeleaf/"/>
+    <id>http://lookforward.top/2023/02/13/Thymeleaf/</id>
+    <published>2023-02-13T04:04:18.715Z</published>
+    <updated>2023-02-13T04:15:20.628Z</updated>
     
     
       
@@ -314,9 +225,8 @@
         
         
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
-# 书城项目
 
-&lt;h2 id=&quot;第一阶段：表单验证&quot;&gt;&lt;a href=&quot;#第一阶段：表单验证&quot; class=&quot;headerlink&quot;</summary>
+&lt;h1 id=&quot;Thymeleaf&quot;&gt;&lt;a href=&quot;#Thymeleaf&quot; class=&quot;headerlink&quot;</summary>
         
       
     
@@ -328,100 +238,278 @@
   </entry>
   
   <entry>
-    <title>JDBC</title>
-    <link href="http://lookforward.top/2022/10/14/JDBC/"/>
-    <id>http://lookforward.top/2022/10/14/JDBC/</id>
-    <published>2022-10-14T14:19:58.000Z</published>
-    <updated>2022-10-22T08:29:38.535Z</updated>
+    <title>Axios</title>
+    <link href="http://lookforward.top/2023/02/13/Axios/"/>
+    <id>http://lookforward.top/2023/02/13/Axios/</id>
+    <published>2023-02-13T04:02:02.013Z</published>
+    <updated>2023-02-13T04:02:33.647Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
 
-&lt;h1 id=&quot;JDBC核心技术&quot;&gt;&lt;a href=&quot;#JDBC核心技术&quot; class=&quot;headerlink&quot; title=&quot;JDBC核心技术&quot;&gt;&lt;/a&gt;JDBC核心技术&lt;/h1&gt;&lt;p&gt;讲师：宋红康&lt;/p&gt;
-&lt;p&gt;微博：尚硅谷-宋红康&lt;/p&gt;
-&lt;hr&gt;
-&lt;h2 id=&quot;第1章：JDBC概述&quot;&gt;&lt;a href=&quot;#第1章：JDBC概述&quot; class=&quot;headerlink&quot; title=&quot;第1章：JDBC概述&quot;&gt;&lt;/a&gt;第1章：JDBC概述&lt;/h2&gt;&lt;h3 id=&quot;1-1-数据的持久化&quot;&gt;&lt;a href=&quot;#1-1-数据的持久化&quot; class=&quot;headerlink&quot; title=&quot;1.1 数据的持久化&quot;&gt;&lt;/a&gt;1.1 数据的持久化&lt;/h3&gt;&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;持久化(persistence)：&lt;strong&gt;把数据保存到可掉电式存储设备中以供之后使用&lt;/strong&gt;。大多数情况下，特别是企业级应用，&lt;strong&gt;数据持久化意味着将内存中的数据保存到硬盘&lt;/strong&gt;上加以”固化”&lt;strong&gt;，而持久化的实现过程大多通过各种关系数据库来完成&lt;/strong&gt;。&lt;/p&gt;
-&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;持久化的主要应用是将内存中的数据存储在关系型数据库中，当然也可以存储在磁盘文件、XML数据文件中。&lt;/p&gt;
-&lt;p&gt;&lt;img src=&quot;%E5%B0%9A%E7%A1%85%E8%B0%B7_%E5%AE%8B%E7%BA%A2%E5%BA%B7_JDBC.assets/1566741430592.png&quot; alt=&quot;1566741430592&quot;&gt; &lt;/p&gt;</summary>
+&lt;h1 id=&quot;Axios&quot;&gt;&lt;a href=&quot;#Axios&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
-    <category term="数据库" scheme="http://lookforward.top/categories/%E6%95%B0%E6%8D%AE%E5%BA%93/"/>
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
     
     
   </entry>
   
   <entry>
-    <title>Html和CSS</title>
-    <link href="http://lookforward.top/2022/10/14/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%B8%89%E4%BB%B6%E5%A5%97/"/>
-    <id>http://lookforward.top/2022/10/14/%E5%89%8D%E7%AB%AF%E5%9F%BA%E7%A1%80-%E4%B8%89%E4%BB%B6%E5%A5%97/</id>
-    <published>2022-10-14T14:19:46.000Z</published>
-    <updated>2022-10-22T09:15:41.043Z</updated>
+    <title>文件的上传和下载</title>
+    <link href="http://lookforward.top/2023/02/13/%E6%96%87%E4%BB%B6%E7%9A%84%E4%B8%8A%E4%BC%A0%E5%92%8C%E4%B8%8B%E8%BD%BD/"/>
+    <id>http://lookforward.top/2023/02/13/%E6%96%87%E4%BB%B6%E7%9A%84%E4%B8%8A%E4%BC%A0%E5%92%8C%E4%B8%8B%E8%BD%BD/</id>
+    <published>2023-02-13T03:57:48.355Z</published>
+    <updated>2023-02-13T04:00:25.511Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
 
-&lt;h1 id=&quot;前端基础—-三件套&quot;&gt;&lt;a href=&quot;#前端基础—-三件套&quot; class=&quot;headerlink&quot; title=&quot;前端基础—-三件套&quot;&gt;&lt;/a&gt;前端基础—-三件套&lt;/h1&gt;&lt;p&gt;[TOC]&lt;/p&gt;
-&lt;h2 id=&quot;一、前言&quot;&gt;&lt;a href=&quot;#一、前言&quot; class=&quot;headerlink&quot; title=&quot;一、前言&quot;&gt;&lt;/a&gt;一、前言&lt;/h2&gt;&lt;p&gt;Zeal64位下载&lt;a href=&quot;https://wwr.lanzoui.com/iQhP5urk3gb&quot;&gt;https://wwr.lanzoui.com/iQhP5urk3gb&lt;/a&gt;&lt;br&gt;Html5&lt;a href=&quot;http://search.bilibili.com/all?from_source=webcommentline_search&amp;keyword=%E6%96%87%E6%A1%A3%E4%B8%8B%E8%BD%BD&quot;&gt;文档下载&lt;/a&gt;&lt;a href=&quot;https://wwr.lanzoui.com/iqAiiurklfi&quot;&gt;https://wwr.lanzoui.com/iqAiiurklfi&lt;/a&gt;&lt;br&gt;CSS3文档下载&lt;a href=&quot;https://wwr.lanzoui.com/iA86gurklgj&quot;&gt;https://wwr.lanzoui.com/iA86gurklgj&lt;/a&gt;&lt;br&gt;文档下载完解压，将html.docset和css.docset放到Zeal-x64/docset文件夹下&lt;br&gt;启动zeal.exe程序就可以直接使用了&lt;/p&gt;</summary>
+&lt;h1 id=&quot;文件的上传和下载&quot;&gt;&lt;a href=&quot;#文件的上传和下载&quot; class=&quot;headerlink&quot;</summary>
+        
+      
     
     
     
-    <category term="前端学习笔记" scheme="http://lookforward.top/categories/%E5%89%8D%E7%AB%AF%E5%AD%A6%E4%B9%A0%E7%AC%94%E8%AE%B0/"/>
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
     
     
   </entry>
   
   <entry>
-    <title>Markdown语法</title>
-    <link href="http://lookforward.top/2022/10/14/Markdown%E8%AF%AD%E6%B3%95/"/>
-    <id>http://lookforward.top/2022/10/14/Markdown%E8%AF%AD%E6%B3%95/</id>
-    <published>2022-10-14T14:18:34.000Z</published>
-    <updated>2022-10-21T05:10:33.993Z</updated>
+    <title>Cookie</title>
+    <link href="http://lookforward.top/2023/02/13/Cookie/"/>
+    <id>http://lookforward.top/2023/02/13/Cookie/</id>
+    <published>2023-02-13T03:57:38.832Z</published>
+    <updated>2023-02-13T04:00:43.384Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
 
-&lt;h1 align=&quot;center&quot;&gt;Markdown语法&lt;/h1&gt;
-
-&lt;h3 id=&quot;1-标题&quot;&gt;&lt;a href=&quot;#1-标题&quot; class=&quot;headerlink&quot; title=&quot;1.标题&quot;&gt;&lt;/a&gt;1.标题&lt;/h3&gt;&lt;p&gt;两种方法：&lt;/p&gt;
-&lt;p&gt;1）使用快捷键Ctrl+(1-6)&lt;/p&gt;
-&lt;p&gt;1）使用#+空格+文字(一个#代表一级，两个代表二级……)&lt;/p&gt;
-&lt;p&gt;例：&lt;/p&gt;</summary>
+&lt;h1 id=&quot;Cookie&quot;&gt;&lt;a href=&quot;#Cookie&quot; class=&quot;headerlink&quot; title=&quot;Cookie&quot;&gt;&lt;/a&gt;Cookie&lt;/h1&gt;&lt;h2</summary>
+        
+      
     
     
     
-    <category term="Markdown语法笔记" scheme="http://lookforward.top/categories/Markdown%E8%AF%AD%E6%B3%95%E7%AC%94%E8%AE%B0/"/>
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
     
     
   </entry>
   
   <entry>
-    <title>Maven</title>
-    <link href="http://lookforward.top/2022/10/14/Maven/"/>
-    <id>http://lookforward.top/2022/10/14/Maven/</id>
-    <published>2022-10-14T14:09:32.000Z</published>
-    <updated>2022-10-22T08:29:20.578Z</updated>
+    <title>EL表达式</title>
+    <link href="http://lookforward.top/2023/02/13/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/"/>
+    <id>http://lookforward.top/2023/02/13/EL%E8%A1%A8%E8%BE%BE%E5%BC%8F/</id>
+    <published>2023-02-13T03:57:34.245Z</published>
+    <updated>2023-02-13T04:06:49.449Z</updated>
     
     
+      
+      
+        
+        
     <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
 
-&lt;h1 id=&quot;Maven&quot;&gt;&lt;a href=&quot;#Maven&quot; class=&quot;headerlink&quot; title=&quot;Maven&quot;&gt;&lt;/a&gt;Maven&lt;/h1&gt;&lt;h2 id=&quot;一、小白入门&quot;&gt;&lt;a href=&quot;#一、小白入门&quot; class=&quot;headerlink&quot; title=&quot;一、小白入门&quot;&gt;&lt;/a&gt;一、小白入门&lt;/h2&gt;&lt;h3 id=&quot;第一章、Maven概述&quot;&gt;&lt;a href=&quot;#第一章、Maven概述&quot; class=&quot;headerlink&quot; title=&quot;第一章、Maven概述&quot;&gt;&lt;/a&gt;第一章、Maven概述&lt;/h3&gt;&lt;h4 id=&quot;1、为什么要学习Maven？&quot;&gt;&lt;a href=&quot;#1、为什么要学习Maven？&quot; class=&quot;headerlink&quot; title=&quot;1、为什么要学习Maven？&quot;&gt;&lt;/a&gt;1、为什么要学习Maven？&lt;/h4&gt;&lt;h5 id=&quot;1、Maven作为依赖管理工具&quot;&gt;&lt;a href=&quot;#1、Maven作为依赖管理工具&quot; class=&quot;headerlink&quot; title=&quot;1、Maven作为依赖管理工具&quot;&gt;&lt;/a&gt;1、Maven作为依赖管理工具&lt;/h5&gt;&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;jar包的规模&lt;/p&gt;
-&lt;figure class=&quot;highlight plaintext&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;1&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;td class=&quot;code&quot;&gt;&lt;pre&gt;&lt;span class=&quot;line&quot;&gt;随着我们使用越来越多的框架，或者框架封装程度越来越高，项目中使用的jar包也越来越多，项目中，一个模块里面要用到上百个jar包是非常正常的。&lt;/span&gt;&lt;br&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/figure&gt;&lt;/li&gt;
-&lt;li&gt;&lt;p&gt;比如下面这个例子，我们只用到SpringBoot、SpringCloud框架中的三个功能：&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nacos服务器注册发现&lt;/li&gt;
-&lt;li&gt;Web框架环境&lt;/li&gt;
-&lt;li&gt;图模块技术Thyme leaf&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;最终导入了106个jar包&lt;/p&gt;
-&lt;p&gt;而如果使用Maven来引用这些jar包只需要配置三个【依赖】。&lt;/p&gt;</summary>
+&lt;h1 id=&quot;EL表达式&quot;&gt;&lt;a href=&quot;#EL表达式&quot; class=&quot;headerlink&quot; title=&quot;EL表达式&quot;&gt;&lt;/a&gt;EL表达式&lt;/h1&gt;&lt;h3</summary>
+        
+      
     
     
     
-    <category term="Maven" scheme="http://lookforward.top/categories/Maven/"/>
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>Filter</title>
+    <link href="http://lookforward.top/2023/02/13/Filter/"/>
+    <id>http://lookforward.top/2023/02/13/Filter/</id>
+    <published>2023-02-13T03:57:29.588Z</published>
+    <updated>2023-02-13T04:14:00.701Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+
+&lt;h1 id=&quot;Filter&quot;&gt;&lt;a href=&quot;#Filter&quot; class=&quot;headerlink&quot; title=&quot;Filter&quot;&gt;&lt;/a&gt;Filter&lt;/h1&gt;&lt;h2</summary>
+        
+      
+    
+    
+    
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery-动画</title>
+    <link href="http://lookforward.top/2023/02/13/JQuery%E5%8A%A8%E7%94%BB/"/>
+    <id>http://lookforward.top/2023/02/13/JQuery%E5%8A%A8%E7%94%BB/</id>
+    <published>2023-02-13T03:57:21.526Z</published>
+    <updated>2023-02-13T04:03:38.084Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+
+
+&lt;h3 id=&quot;12、JQuery动画&quot;&gt;&lt;a href=&quot;#12、JQuery动画&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JSON、AJAX、i18n</title>
+    <link href="http://lookforward.top/2023/02/13/JSON%E3%80%81AJAX%E3%80%81i18n/"/>
+    <id>http://lookforward.top/2023/02/13/JSON%E3%80%81AJAX%E3%80%81i18n/</id>
+    <published>2023-02-13T03:57:14.821Z</published>
+    <updated>2023-02-13T04:01:28.969Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h1 id=&quot;JSON、AJAX、i18n&quot;&gt;&lt;a href=&quot;#JSON、AJAX、i18n&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>JSP</title>
+    <link href="http://lookforward.top/2023/02/13/JSP/"/>
+    <id>http://lookforward.top/2023/02/13/JSP/</id>
+    <published>2023-02-13T03:57:08.987Z</published>
+    <updated>2023-02-13T04:15:04.175Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+
+&lt;h1 id=&quot;JSP&quot;&gt;&lt;a href=&quot;#JSP&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title></title>
+    <link href="http://lookforward.top/2023/02/13/Tomcat&amp;Servlet/"/>
+    <id>http://lookforward.top/2023/02/13/Tomcat&amp;Servlet/</id>
+    <published>2023-02-13T03:56:58.050Z</published>
+    <updated>2023-02-13T04:15:51.703Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;hr&gt;
+&lt;p&gt;title: Tomcat和Servlet&lt;br&gt;categories: JavaWeb&lt;br&gt;tags:&lt;br&gt;cover: &lt;a</summary>
+        
+      
+    
+    
+    
+    
+  </entry>
+  
+  <entry>
+    <title>XML</title>
+    <link href="http://lookforward.top/2023/02/13/XML/"/>
+    <id>http://lookforward.top/2023/02/13/XML/</id>
+    <published>2023-02-13T03:56:35.210Z</published>
+    <updated>2023-02-13T03:58:30.691Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+
+&lt;h1 id=&quot;XML&quot;&gt;&lt;a href=&quot;#XML&quot; class=&quot;headerlink&quot; title=&quot;XML&quot;&gt;&lt;/a&gt;XML&lt;/h1&gt;&lt;h2 id=&quot;1、XML简介&quot;&gt;&lt;a</summary>
+        
+      
+    
+    
+    
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
+    
+    
+  </entry>
+  
+  <entry>
+    <title>jQuery</title>
+    <link href="http://lookforward.top/2023/02/13/jQuery/"/>
+    <id>http://lookforward.top/2023/02/13/jQuery/</id>
+    <published>2023-02-13T03:55:34.474Z</published>
+    <updated>2023-02-13T03:56:20.728Z</updated>
+    
+    
+      
+      
+        
+        
+    <summary type="html">&lt;meta name=&quot;referrer&quot; content=&quot;no-referrer&quot; /&gt;
+
+&lt;h2 id=&quot;三、jQuery&quot;&gt;&lt;a href=&quot;#三、jQuery&quot; class=&quot;headerlink&quot;</summary>
+        
+      
+    
+    
+    
+    <category term="JavaWeb" scheme="http://lookforward.top/categories/JavaWeb/"/>
     
     
   </entry>
